@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G06JV8JVY3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-G06JV8JVY3', {
+        'page_title': '404 - Page Not Found',
+        'page_path': window.location.pathname
+      });
+    </script>
+
+    <script>
+        // Immediate redirect logic for legacy paths to subdomains before rendering DOM
+        const pathname = window.location.pathname.toLowerCase();
+        const redirects = {
+            '/automation': 'https://automation.futurelab.co.in/',
+            '/quiz': 'https://techquiz.futurelab.co.in/',
+            '/sql': 'https://sql.futurelab.co.in/',
+            '/mftracker': 'https://mftracker.futurelab.co.in/',
+            '/games': 'https://games.futurelab.co.in/',
+            '/abkm': 'https://abkm.futurelab.co.in/'
+        };
+        
+        for (const [path, target] of Object.entries(redirects)) {
+            if (pathname === path || pathname.startsWith(path + '/') || pathname.startsWith(path + '.')) {
+                let subpath = window.location.pathname.substring(path.length);
+                if (subpath.startsWith('/')) {
+                    subpath = subpath.substring(1);
+                }
+                window.location.replace(target + subpath + window.location.search + window.location.hash);
+                break;
+            }
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Page Not Found - Future Lab</title>
+    
+    <!-- Meta tags -->
+    <meta name="description" content="The page you are looking for does not exist. Redirecting you to Future Lab homepage.">
+    <meta name="robots" content="noindex, follow">
+
+    <!-- Stylesheets & Fonts -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        dark: {
+                            DEFAULT: '#030712',
+                            card: '#090d16',
+                            border: 'rgba(255, 255, 255, 0.06)'
+                        },
+                        brand: {
+                            blue: '#2563eb',
+                            purple: '#7c3aed',
+                            pink: '#db2777'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/lucide/dist/umd/lucide.min.js"></script>
+    
+    <style>
+        .custom-glow {
+            transition: transform 0.1s ease-out;
+            pointer-events: none;
+        }
+        /* Style for circular progress animation */
+        .progress-ring__circle {
+            transition: stroke-dashoffset 0.1s linear;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+        }
+    </style>
+</head>
+<body class="bg-[#f8fafc] text-slate-700 select-none overflow-x-hidden selection:bg-brand-purple selection:text-white min-h-screen flex flex-col justify-between relative">
+
+    <!-- Ambient Glowing Orbs -->
+    <div class="absolute top-10 left-1/4 w-[400px] h-[400px] glow-blue -z-10 rounded-full"></div>
+    <div class="absolute bottom-10 right-1/4 w-[450px] h-[450px] glow-purple -z-10 rounded-full"></div>
+
+    <!-- BACKGROUND GRID OVERLAY -->
+    <div class="absolute inset-0 grid-bg opacity-75 pointer-events-none -z-20"></div>
+
+    <!-- Interactive Mouse Glow Tracker -->
+    <div id="mouse-glow" class="custom-glow absolute w-64 h-64 bg-brand-blue/5 rounded-full filter blur-[80px] -z-10 opacity-0 transition-opacity duration-300"></div>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="w-full z-50 border-b border-slate-200/50 glass-panel">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="/" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-blue to-brand-purple flex items-center justify-center shadow-lg shadow-brand-blue/20 group-hover:scale-105 transition-all duration-300">
+                    <i data-lucide="terminal" class="w-5.5 h-5.5 text-white"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-display font-bold text-xl tracking-tight bg-gradient-to-r from-slate-900 via-slate-800 to-slate-600 bg-clip-text text-transparent group-hover:text-slate-950 transition-colors duration-300">Future Lab</span>
+                    <span class="text-[10px] text-slate-400 font-mono tracking-widest leading-none">FUTURELAB.CO.IN</span>
+                </div>
+            </a>
+            
+            <a href="/" class="text-sm font-semibold text-slate-500 hover:text-slate-900 transition-colors flex items-center gap-2">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Home
+            </a>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-grow flex items-center justify-center px-6 py-12">
+        <div class="max-w-3xl w-full flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            
+            <!-- Visual / Interactive Countdown Area -->
+            <div class="flex flex-col items-center text-center space-y-4">
+                <div class="relative w-36 h-36 flex items-center justify-center">
+                    <!-- Circular Countdown SVG -->
+                    <svg class="w-full h-full">
+                        <circle class="text-slate-200" stroke-width="6" stroke="currentColor" fill="transparent" r="58" cx="72" cy="72"/>
+                        <circle class="text-brand-purple progress-ring__circle" stroke-width="6" stroke-linecap="round" stroke="currentColor" fill="transparent" r="58" cx="72" cy="72" id="progress-circle"/>
+                    </svg>
+                    <div class="absolute flex flex-col items-center justify-center">
+                        <span id="countdown-text" class="text-5xl font-display font-bold text-slate-900">5</span>
+                        <span class="text-[10px] uppercase font-bold tracking-wider text-slate-400">Seconds</span>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="text-6xl font-display font-extrabold text-slate-900">404</h1>
+                    <p class="text-sm font-mono font-bold tracking-wider text-brand-pink uppercase mt-1">Page Not Found</p>
+                </div>
+            </div>
+
+            <!-- Description & Console area -->
+            <div class="flex-grow w-full space-y-6">
+                <div class="space-y-3">
+                    <h2 class="text-2xl font-display font-extrabold text-slate-900">Whoops! You've reached an invalid page.</h2>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        The resource you requested does not exist or has moved. We are automatically routing you back to safety on our home page.
+                    </p>
+                </div>
+
+                <!-- Simulation terminal -->
+                <div class="bg-slate-950 border border-slate-900 rounded-xl shadow-xl overflow-hidden flex flex-col font-mono text-xs text-gray-300">
+                    <div class="px-4 py-2 bg-slate-900 border-b border-slate-800 flex items-center justify-between">
+                        <div class="flex items-center gap-1.5">
+                            <span class="w-2.5 h-2.5 rounded-full bg-red-500/80"></span>
+                            <span class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></span>
+                            <span class="w-2.5 h-2.5 rounded-full bg-green-500/80"></span>
+                        </div>
+                        <span class="text-[10px] text-gray-500">routing-diagnostic.sh</span>
+                        <span class="w-6"></span>
+                    </div>
+                    <div class="p-4 space-y-1 h-36 overflow-y-auto" id="console-logs">
+                        <div class="text-gray-500">$ locate_page --path "<span id="display-path"></span>"</div>
+                        <!-- Logs will stream here via JS -->
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center gap-4">
+                    <button id="btn-redirect-now" class="w-full sm:w-auto px-6 py-3 bg-gradient-to-r from-brand-blue to-brand-purple text-white rounded-xl font-bold shadow-lg shadow-brand-blue/20 hover:shadow-brand-blue/35 transition-all duration-300 flex items-center justify-center gap-2">
+                        Redirect Now <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </button>
+                    <a href="/" class="w-full sm:w-auto px-6 py-3 bg-slate-100 border border-slate-200 text-slate-700 rounded-xl font-bold text-center hover:bg-slate-200/60 transition-colors">
+                        Go to Home
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="w-full py-6 text-center border-t border-slate-200/50 text-xs text-slate-400">
+        <div class="max-w-7xl mx-auto px-6">
+            &copy; 2026 Future Lab. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Init Lucide Icons
+        lucide.createIcons();
+
+        // Mouse glow tracker
+        const mouseGlow = document.getElementById('mouse-glow');
+        document.addEventListener('mousemove', (e) => {
+            mouseGlow.style.opacity = '1';
+            mouseGlow.style.left = `${e.pageX - 128}px`;
+            mouseGlow.style.top = `${e.pageY - 128}px`;
+        });
+        document.addEventListener('mouseleave', () => {
+            mouseGlow.style.opacity = '0';
+        });
+
+        // Diagnostics Terminal Logs Simulation
+        const logsContainer = document.getElementById('console-logs');
+        const displayPath = document.getElementById('display-path');
+        const currentPath = window.location.pathname;
+        
+        displayPath.textContent = currentPath.length > 30 ? currentPath.substring(0, 27) + '...' : currentPath;
+
+        const logSequences = [
+            { text: '[INFO] Initializing route check...', delay: 200, color: 'text-gray-400' },
+            { text: '[INFO] Querying active DNS pointers...', delay: 500, color: 'text-gray-400' },
+            { text: `[WARN] Page resource not found matching: "${currentPath}"`, delay: 900, color: 'text-yellow-500' },
+            { text: '[ERR]  404: OBJECT_NOT_FOUND', delay: 1300, color: 'text-red-500' },
+            { text: '[INFO] Executing fallback redirect sequence...', delay: 1700, color: 'text-brand-blue' }
+        ];
+
+        logSequences.forEach(seq => {
+            setTimeout(() => {
+                const logLine = document.createElement('div');
+                logLine.className = seq.color;
+                logLine.textContent = seq.text;
+                logsContainer.appendChild(logLine);
+                logsContainer.scrollTop = logsContainer.scrollHeight;
+            }, seq.delay);
+        });
+
+        // Countdown Timer & Circular Progress
+        const countdownText = document.getElementById('countdown-text');
+        const circle = document.getElementById('progress-circle');
+        const radius = circle.r.baseVal.value;
+        const circumference = radius * 2 * Math.PI;
+
+        circle.style.strokeDasharray = `${circumference} ${circumference}`;
+        circle.style.strokeDashoffset = 0;
+
+        let timeLeft = 5; // 5 seconds
+        const totalDuration = 5000; // 5000 ms
+        const intervalTime = 50; // update progress every 50ms
+        let elapsed = 0;
+
+        function setProgress(percent) {
+            const offset = circumference - (percent / 100 * circumference);
+            circle.style.strokeDashoffset = offset;
+        }
+
+        const timerInterval = setInterval(() => {
+            elapsed += intervalTime;
+            const percentage = 100 - (elapsed / totalDuration * 100);
+            setProgress(percentage);
+
+            const nextSec = Math.ceil((totalDuration - elapsed) / 1000);
+            if (nextSec >= 0 && nextSec !== timeLeft) {
+                timeLeft = nextSec;
+                countdownText.textContent = timeLeft;
+            }
+
+            if (elapsed >= totalDuration) {
+                clearInterval(timerInterval);
+                doRedirect();
+            }
+        }, intervalTime);
+
+        function doRedirect() {
+            window.location.replace('/');
+        }
+
+        // Action Buttons
+        document.getElementById('btn-redirect-now').addEventListener('click', () => {
+            doRedirect();
+        });
+    </script>
+</body>
+</html>
