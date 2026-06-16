@@ -1214,8 +1214,27 @@
             submitBtn.innerHTML = 'Sending Message... <i data-lucide="loader-2" class="w-4 h-4 animate-spin"></i>';
             lucide.createIcons();
 
-            // Simulate server-side post API delay
-            setTimeout(() => {
+            // Submit form fields using FormSubmit AJAX API
+            fetch("https://formsubmit.co/ajax/hello@futurelab.co.in", {
+                method: "POST",
+                headers: { 
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
+                body: JSON.stringify({
+                    Name: nameInput.value,
+                    Email: emailInput.value,
+                    Service: serviceInput.value,
+                    Message: msgInput.value
+                })
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("API call failed");
+                }
+                return response.json();
+            })
+            .then(data => {
                 formNode.classList.add('hidden');
                 successNode.classList.remove('hidden');
 
@@ -1228,7 +1247,14 @@
                 submitBtn.disabled = false;
                 submitBtn.innerHTML = 'Send Proposal Message <i data-lucide="send" class="w-4 h-4"></i>';
                 lucide.createIcons();
-            }, 1500);
+            })
+            .catch(error => {
+                console.error('Error submitting form:', error);
+                alert('There was a problem sending your message. Please email hello@futurelab.co.in directly or try again.');
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = 'Send Proposal Message <i data-lucide="send" class="w-4 h-4"></i>';
+                lucide.createIcons();
+            });
         }
 
         // Reset
