@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://futurelab.co.in/</loc>
-        <lastmod>2026-06-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-    </url>
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <sitemap>
+      <loc>https://futurelab.co.in/main-sitemap.xml</loc>
+   </sitemap>
+   <sitemap>
+      <loc>https://automation.futurelab.co.in/sitemap.xml</loc>
+   </sitemap>
+   <sitemap>
+      <loc>https://techquiz.futurelab.co.in/sitemap.xml</loc>
+   </sitemap>
+   <sitemap>
+      <loc>https://sql.futurelab.co.in/sitemap.xml</loc>
+   </sitemap>
+   <sitemap>
+      <loc>https://partyfun.futurelab.co.in/sitemap.xml</loc>
+   </sitemap>
+   <sitemap>
+      <loc>https://mftracker.futurelab.co.in/sitemap.xml</loc>
+   </sitemap>
+   <sitemap>
+      <loc>https://abkm.futurelab.co.in/sitemap.xml</loc>
+   </sitemap>
+   <sitemap>
+      <loc>https://barati.futurelab.co.in/sitemap.xml</loc>
+   </sitemap>
+   <sitemap>
+      <loc>https://api.futurelab.co.in/sitemap.xml</loc>
+   </sitemap>
+</sitemapindex>
