@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-G06JV8JVY3"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      gtag('config', 'G-G06JV8JVY3');
+        gtag('config', 'G-G06JV8JVY3');
     </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Primary Meta Tags -->
     <title>Future Lab - Premium Software Development & Digital Products</title>
     <meta name="title" content="Future Lab - Premium Software Development & Digital Products">
-    <meta name="description" content="Premium software development agency and digital products studio. Crafting high-performance Web Apps, Android Apps, automation solutions, API integrations, and custom software.">
-    <meta name="keywords" content="Software Development, Web Applications, Android Development, API Integration, Test Automation, Software Agency, SaaS Builder, Future Lab">
+    <meta name="description"
+        content="Premium software development agency and digital products studio. Crafting high-performance Web Apps, Android Apps, automation solutions, API integrations, and custom software.">
+    <meta name="keywords"
+        content="Software Development, Web Applications, Android Development, API Integration, Test Automation, Software Agency, SaaS Builder, Future Lab">
     <meta name="author" content="Future Lab">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://futurelab.co.in/">
     <meta property="og:title" content="Future Lab - Premium Software Development & Digital Products">
-    <meta property="og:description" content="Premium software development agency and digital products studio. Crafting high-performance Web Apps, Android Apps, automation solutions, API integrations, and custom software.">
+    <meta property="og:description"
+        content="Premium software development agency and digital products studio. Crafting high-performance Web Apps, Android Apps, automation solutions, API integrations, and custom software.">
     <meta property="og:image" content="https://futurelab.co.in/og-image.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://futurelab.co.in/">
     <meta property="twitter:title" content="Future Lab - Premium Software Development & Digital Products">
-    <meta property="twitter:description" content="Premium software development agency and digital products studio. Crafting high-performance Web Apps, Android Apps, automation solutions, API integrations, and custom software.">
+    <meta property="twitter:description"
+        content="Premium software development agency and digital products studio. Crafting high-performance Web Apps, Android Apps, automation solutions, API integrations, and custom software.">
     <meta property="twitter:image" content="https://futurelab.co.in/og-image.png">
 
     <!-- Stylesheets & Fonts -->
     <link rel="stylesheet" href="style.css">
-    
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -65,7 +70,7 @@
             }
         }
     </script>
-    
+
     <!-- Lucide Icons -->
     <script src="https://cdn.jsdelivr.net/npm/lucide/dist/umd/lucide.min.js"></script>
 
@@ -94,6 +99,7 @@
     }
     </script>
 </head>
+
 <body class="bg-[#f8fafc] text-slate-700 select-none overflow-x-hidden selection:bg-brand-purple selection:text-white">
 
     <!-- Ambient Glowing Orbs -->
@@ -110,12 +116,16 @@
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <!-- Logo -->
             <a href="#" class="flex items-center gap-3 group">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-blue to-brand-purple flex items-center justify-center shadow-lg shadow-brand-blue/20 group-hover:scale-105 transition-all duration-300">
+                <div
+                    class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-blue to-brand-purple flex items-center justify-center shadow-lg shadow-brand-blue/20 group-hover:scale-105 transition-all duration-300">
                     <i data-lucide="terminal" class="w-5.5 h-5.5 text-white"></i>
                 </div>
                 <div class="flex flex-col">
-                    <span class="font-display font-bold text-xl tracking-tight bg-gradient-to-r from-slate-900 via-slate-800 to-slate-600 bg-clip-text text-transparent group-hover:text-slate-950 transition-colors duration-300">Future Lab</span>
-                    <span class="text-[10px] text-slate-400 font-mono tracking-widest leading-none">FUTURELAB.CO.IN</span>
+                    <span
+                        class="font-display font-bold text-xl tracking-tight bg-gradient-to-r from-slate-900 via-slate-800 to-slate-600 bg-clip-text text-transparent group-hover:text-slate-950 transition-colors duration-300">Future
+                        Lab</span>
+                    <span
+                        class="text-[10px] text-slate-400 font-mono tracking-widest leading-none">FUTURELAB.CO.IN</span>
                 </div>
             </a>
 
@@ -130,127 +140,156 @@
 
             <!-- CTA / Contact Button -->
             <div class="hidden md:block">
-                <a href="#contact" class="gradient-border-btn px-6 py-2 text-sm font-bold text-slate-800 tracking-wide block">
+                <a href="#contact"
+                    class="gradient-border-btn px-6 py-2 text-sm font-bold text-slate-800 tracking-wide block">
                     Get in Touch
                 </a>
             </div>
 
             <!-- Mobile Menu Toggle Button -->
-            <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-500 hover:text-slate-900 focus:outline-none" aria-label="Toggle Navigation">
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-500 hover:text-slate-900 focus:outline-none"
+                aria-label="Toggle Navigation">
                 <i data-lucide="menu" class="w-6 h-6" id="menu-icon"></i>
             </button>
         </div>
 
         <!-- Mobile Navigation Panel -->
-        <div id="mobile-menu" class="hidden md:hidden glass-panel border-b border-slate-200 absolute top-20 left-0 w-full px-6 py-8 flex flex-col gap-6 text-base font-semibold shadow-2xl transition-all duration-300">
-            <a href="#services" class="text-slate-500 hover:text-slate-900 transition-colors flex items-center gap-3"><i data-lucide="layers" class="w-4 h-4"></i> Services</a>
-            <a href="#products" class="text-slate-500 hover:text-slate-900 transition-colors flex items-center gap-3"><i data-lucide="package" class="w-4 h-4"></i> Products</a>
-            <a href="#about" class="text-slate-500 hover:text-slate-900 transition-colors flex items-center gap-3"><i data-lucide="user-check" class="w-4 h-4"></i> Why Us</a>
-            <a href="#process" class="text-slate-500 hover:text-slate-900 transition-colors flex items-center gap-3"><i data-lucide="git-branch" class="w-4 h-4"></i> Workflow</a>
-            <a href="#stack" class="text-slate-500 hover:text-slate-900 transition-colors flex items-center gap-3"><i data-lucide="cpu" class="w-4 h-4"></i> Stack</a>
+        <div id="mobile-menu"
+            class="hidden md:hidden glass-panel border-b border-slate-200 absolute top-20 left-0 w-full px-6 py-8 flex flex-col gap-6 text-base font-semibold shadow-2xl transition-all duration-300">
+            <a href="#services" class="text-slate-500 hover:text-slate-900 transition-colors flex items-center gap-3"><i
+                    data-lucide="layers" class="w-4 h-4"></i> Services</a>
+            <a href="#products" class="text-slate-500 hover:text-slate-900 transition-colors flex items-center gap-3"><i
+                    data-lucide="package" class="w-4 h-4"></i> Products</a>
+            <a href="#about" class="text-slate-500 hover:text-slate-900 transition-colors flex items-center gap-3"><i
+                    data-lucide="user-check" class="w-4 h-4"></i> Why Us</a>
+            <a href="#process" class="text-slate-500 hover:text-slate-900 transition-colors flex items-center gap-3"><i
+                    data-lucide="git-branch" class="w-4 h-4"></i> Workflow</a>
+            <a href="#stack" class="text-slate-500 hover:text-slate-900 transition-colors flex items-center gap-3"><i
+                    data-lucide="cpu" class="w-4 h-4"></i> Stack</a>
             <hr class="border-slate-100 my-2">
-            <a href="#contact" class="w-full text-center py-3 bg-gradient-to-r from-brand-blue to-brand-purple rounded-xl font-bold text-white shadow-lg shadow-brand-blue/10 hover:shadow-brand-blue/20 transition-all duration-300">
+            <a href="#contact"
+                class="w-full text-center py-3 bg-gradient-to-r from-brand-blue to-brand-purple rounded-xl font-bold text-white shadow-lg shadow-brand-blue/10 hover:shadow-brand-blue/20 transition-all duration-300">
                 Let's Build Something
             </a>
         </div>
     </header>
 
     <main>
-    <!-- SECTION 1: HERO -->
-    <section class="pt-32 pb-20 px-6 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-8 min-h-[90vh]" id="hero">
-        <div class="flex-1 text-center lg:text-left space-y-6">
-            <!-- Premium Badge -->
-            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass-panel border-slate-200 text-xs font-semibold text-brand-blue shadow-md tracking-wide animate-pulse">
-                <span class="w-2 h-2 rounded-full bg-brand-blue status-pulse"></span>
-                <span>Open for Project Consultations</span>
-            </div>
-
-            <!-- Headline -->
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-display font-extrabold tracking-tight text-slate-900 leading-tight">
-                Building Software That <br class="hidden sm:inline">
-                <span class="bg-gradient-to-r from-brand-blue via-brand-purple to-brand-pink bg-clip-text text-transparent">
-                    Solves Real Problems
-                </span>
-            </h1>
-
-            <!-- Subheadline -->
-            <p class="text-slate-600 text-lg md:text-xl font-medium max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                Web Apps, Android Apps, Automation Platforms, AI Tools, and Productivity Solutions.
-            </p>
-
-            <!-- CTAs -->
-            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
-                <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-brand-blue to-brand-purple text-white rounded-xl font-bold shadow-lg shadow-brand-blue/20 hover:shadow-brand-blue/35 hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-2">
-                    Let's Build Something <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                </a>
-                <a href="#products" class="w-full sm:w-auto px-8 py-4 bg-slate-100 border border-slate-200 text-slate-700 rounded-xl font-bold hover:bg-slate-200/60 transition-colors flex items-center justify-center gap-2">
-                    Explore Products <i data-lucide="chevron-right" class="w-4 h-4"></i>
-                </a>
-            </div>
-
-            <!-- Client Trust Indicators -->
-            <div class="pt-8 border-t border-slate-200/50 flex flex-wrap justify-center lg:justify-start items-center gap-x-8 gap-y-3">
-                <span class="text-xs font-mono uppercase text-slate-400 tracking-wider">Expertise:</span>
-                <div class="flex items-center gap-2 text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">
-                    <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-brand-blue"></i> Fast Delivery
+        <!-- SECTION 1: HERO -->
+        <section
+            class="pt-32 pb-20 px-6 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-8 min-h-[90vh]"
+            id="hero">
+            <div class="flex-1 text-center lg:text-left space-y-6">
+                <!-- Premium Badge -->
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass-panel border-slate-200 text-xs font-semibold text-brand-blue shadow-md tracking-wide animate-pulse">
+                    <span class="w-2 h-2 rounded-full bg-brand-blue status-pulse"></span>
+                    <span>Open for Project Consultations</span>
                 </div>
-                <div class="flex items-center gap-2 text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">
-                    <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-brand-purple"></i> Production Ready
-                </div>
-                <div class="flex items-center gap-2 text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">
-                    <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-brand-pink"></i> Scalable Design
-                </div>
-            </div>
-        </div>
 
-        <!-- HERO DEMO PANEL (Interactive Concept Dashboard) -->
-        <div class="flex-1 w-full max-w-xl mx-auto lg:mx-0 select-none">
-            <!-- Sleek Dark IDE Container to highlight code blocks -->
-            <div class="bg-slate-950 border border-slate-900 rounded-2xl shadow-2xl overflow-hidden flex flex-col">
-                <!-- Mac-style top bar -->
-                <div class="px-4 py-3 bg-slate-900 border-b border-slate-800 flex items-center justify-between">
-                    <div class="flex items-center gap-1.5">
-                        <span class="w-3 h-3 rounded-full bg-red-500/80"></span>
-                        <span class="w-3 h-3 rounded-full bg-yellow-500/80"></span>
-                        <span class="w-3 h-3 rounded-full bg-green-500/80"></span>
+                <!-- Headline -->
+                <h1
+                    class="text-4xl sm:text-5xl md:text-6xl font-display font-extrabold tracking-tight text-slate-900 leading-tight">
+                    Building Software That <br class="hidden sm:inline">
+                    <span
+                        class="bg-gradient-to-r from-brand-blue via-brand-purple to-brand-pink bg-clip-text text-transparent">
+                        Solves Real Problems
+                    </span>
+                </h1>
+
+                <!-- Subheadline -->
+                <p class="text-slate-600 text-lg md:text-xl font-medium max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                    Web Apps, Android Apps, Automation Platforms, AI Tools, and Productivity Solutions.
+                </p>
+
+                <!-- CTAs -->
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                    <a href="#contact"
+                        class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-brand-blue to-brand-purple text-white rounded-xl font-bold shadow-lg shadow-brand-blue/20 hover:shadow-brand-blue/35 hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-2">
+                        Let's Build Something <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                    <a href="#products"
+                        class="w-full sm:w-auto px-8 py-4 bg-slate-100 border border-slate-200 text-slate-700 rounded-xl font-bold hover:bg-slate-200/60 transition-colors flex items-center justify-center gap-2">
+                        Explore Products <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Client Trust Indicators -->
+                <div
+                    class="pt-8 border-t border-slate-200/50 flex flex-wrap justify-center lg:justify-start items-center gap-x-8 gap-y-3">
+                    <span class="text-xs font-mono uppercase text-slate-400 tracking-wider">Expertise:</span>
+                    <div
+                        class="flex items-center gap-2 text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">
+                        <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-brand-blue"></i> Fast Delivery
                     </div>
-                    <span class="text-xs font-mono text-gray-500">futurelab-simulation.sh</span>
-                    <span class="w-10"></span>
+                    <div
+                        class="flex items-center gap-2 text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">
+                        <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-brand-purple"></i> Production Ready
+                    </div>
+                    <div
+                        class="flex items-center gap-2 text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">
+                        <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-brand-pink"></i> Scalable Design
+                    </div>
                 </div>
+            </div>
 
-                <!-- Tabs Selector -->
-                <div class="flex bg-slate-900/40 border-b border-slate-900 text-xs text-gray-400 font-mono">
-                    <button id="tab-btn-api" onclick="switchHeroTab('api')" class="flex-1 py-3 border-b-2 border-brand-blue bg-slate-900 text-white font-semibold flex items-center justify-center gap-2 transition-all">
-                        <i data-lucide="repeat" class="w-3.5 h-3.5"></i> API Integration
-                    </button>
-                    <button id="tab-btn-test" onclick="switchHeroTab('test')" class="flex-1 py-3 border-b-2 border-transparent hover:text-white flex items-center justify-center gap-2 transition-all">
-                        <i data-lucide="shield-check" class="w-3.5 h-3.5"></i> Test Automation
-                    </button>
-                    <button id="tab-btn-ai" onclick="switchHeroTab('ai')" class="flex-1 py-3 border-b-2 border-transparent hover:text-white flex items-center justify-center gap-2 transition-all">
-                        <i data-lucide="sparkles" class="w-3.5 h-3.5"></i> AI Playground
-                    </button>
-                </div>
+            <!-- HERO DEMO PANEL (Interactive Concept Dashboard) -->
+            <div class="flex-1 w-full max-w-xl mx-auto lg:mx-0 select-none">
+                <!-- Sleek Dark IDE Container to highlight code blocks -->
+                <div class="bg-slate-950 border border-slate-900 rounded-2xl shadow-2xl overflow-hidden flex flex-col">
+                    <!-- Mac-style top bar -->
+                    <div class="px-4 py-3 bg-slate-900 border-b border-slate-800 flex items-center justify-between">
+                        <div class="flex items-center gap-1.5">
+                            <span class="w-3 h-3 rounded-full bg-red-500/80"></span>
+                            <span class="w-3 h-3 rounded-full bg-yellow-500/80"></span>
+                            <span class="w-3 h-3 rounded-full bg-green-500/80"></span>
+                        </div>
+                        <span class="text-xs font-mono text-gray-500">futurelab-simulation.sh</span>
+                        <span class="w-10"></span>
+                    </div>
 
-                <!-- Live Simulation Screen Container -->
-                <div class="p-5 font-mono text-sm h-64 bg-slate-950 flex flex-col justify-between overflow-y-auto">
-                    <!-- API TAB CONTENT -->
-                    <div id="tab-content-api" class="space-y-3">
-                        <div class="flex items-center justify-between text-xs text-gray-500 border-b border-slate-900 pb-2">
-                            <span>HTTP POST /api/v1/build</span>
-                            <span class="text-green-400 flex items-center gap-1"><i data-lucide="check-circle" class="w-3 h-3"></i> HTTPS Secure</span>
-                        </div>
-                        <div class="text-blue-400">const request = await fetch('https://futurelab.co.in/api/v1/build', {</div>
-                        <div class="pl-4 text-purple-400">method: 'POST',</div>
-                        <div class="pl-4 text-pink-400">body: JSON.stringify({ type: 'Web App', stack: 'NextJS' })</div>
-                        <div class="text-blue-400">});</div>
-                        
-                        <div class="mt-2 flex items-center gap-4">
-                            <button onclick="runApiSimulation()" id="api-trigger-btn" class="px-3 py-1.5 bg-brand-blue hover:bg-brand-blue/80 text-white rounded text-xs font-semibold flex items-center gap-1.5 transition-all">
-                                <i data-lucide="play" class="w-3.5 h-3.5"></i> Send Request
-                            </button>
-                            <span id="api-status" class="text-xs text-gray-500 font-semibold">Idle</span>
-                        </div>
-                        <pre id="api-response" class="text-[11px] text-green-400/90 hidden bg-black/40 p-2.5 rounded border border-green-500/10 overflow-x-auto max-h-24">
+                    <!-- Tabs Selector -->
+                    <div class="flex bg-slate-900/40 border-b border-slate-900 text-xs text-gray-400 font-mono">
+                        <button id="tab-btn-api" onclick="switchHeroTab('api')"
+                            class="flex-1 py-3 border-b-2 border-brand-blue bg-slate-900 text-white font-semibold flex items-center justify-center gap-2 transition-all">
+                            <i data-lucide="repeat" class="w-3.5 h-3.5"></i> API Integration
+                        </button>
+                        <button id="tab-btn-test" onclick="switchHeroTab('test')"
+                            class="flex-1 py-3 border-b-2 border-transparent hover:text-white flex items-center justify-center gap-2 transition-all">
+                            <i data-lucide="shield-check" class="w-3.5 h-3.5"></i> Test Automation
+                        </button>
+                        <button id="tab-btn-ai" onclick="switchHeroTab('ai')"
+                            class="flex-1 py-3 border-b-2 border-transparent hover:text-white flex items-center justify-center gap-2 transition-all">
+                            <i data-lucide="sparkles" class="w-3.5 h-3.5"></i> AI Playground
+                        </button>
+                    </div>
+
+                    <!-- Live Simulation Screen Container -->
+                    <div class="p-5 font-mono text-sm h-64 bg-slate-950 flex flex-col justify-between overflow-y-auto">
+                        <!-- API TAB CONTENT -->
+                        <div id="tab-content-api" class="space-y-3">
+                            <div
+                                class="flex items-center justify-between text-xs text-gray-500 border-b border-slate-900 pb-2">
+                                <span>HTTP POST /api/v1/build</span>
+                                <span class="text-green-400 flex items-center gap-1"><i data-lucide="check-circle"
+                                        class="w-3 h-3"></i> HTTPS Secure</span>
+                            </div>
+                            <div class="text-blue-400">const request = await
+                                fetch('https://futurelab.co.in/api/v1/build', {</div>
+                            <div class="pl-4 text-purple-400">method: 'POST',</div>
+                            <div class="pl-4 text-pink-400">body: JSON.stringify({ type: 'Web App', stack: 'NextJS' })
+                            </div>
+                            <div class="text-blue-400">});</div>
+
+                            <div class="mt-2 flex items-center gap-4">
+                                <button onclick="runApiSimulation()" id="api-trigger-btn"
+                                    class="px-3 py-1.5 bg-brand-blue hover:bg-brand-blue/80 text-white rounded text-xs font-semibold flex items-center gap-1.5 transition-all">
+                                    <i data-lucide="play" class="w-3.5 h-3.5"></i> Send Request
+                                </button>
+                                <span id="api-status" class="text-xs text-gray-500 font-semibold">Idle</span>
+                            </div>
+                            <pre id="api-response"
+                                class="text-[11px] text-green-400/90 hidden bg-black/40 p-2.5 rounded border border-green-500/10 overflow-x-auto max-h-24">
 {
   "status": 200,
   "data": {
@@ -259,649 +298,761 @@
     "agency": "Active"
   }
 }</pre>
-                    </div>
-
-                    <!-- TEST AUTOMATION TAB CONTENT -->
-                    <div id="tab-content-test" class="space-y-2 hidden text-xs text-gray-300">
-                        <div class="flex items-center justify-between border-b border-slate-900 pb-2 text-gray-500">
-                            <span>npx playwright test</span>
-                            <span id="test-runner-status" class="text-yellow-400 flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-yellow-400 animate-pulse"></span> Running</span>
                         </div>
-                        <div id="test-console" class="space-y-1 font-mono text-[11px] overflow-y-auto max-h-40">
-                            <div class="text-gray-500">[1/3] Running Web Browser Engine tests...</div>
+
+                        <!-- TEST AUTOMATION TAB CONTENT -->
+                        <div id="tab-content-test" class="space-y-2 hidden text-xs text-gray-300">
+                            <div class="flex items-center justify-between border-b border-slate-900 pb-2 text-gray-500">
+                                <span>npx playwright test</span>
+                                <span id="test-runner-status" class="text-yellow-400 flex items-center gap-1"><span
+                                        class="w-2 h-2 rounded-full bg-yellow-400 animate-pulse"></span> Running</span>
+                            </div>
+                            <div id="test-console" class="space-y-1 font-mono text-[11px] overflow-y-auto max-h-40">
+                                <div class="text-gray-500">[1/3] Running Web Browser Engine tests...</div>
+                            </div>
+                            <div class="pt-2 border-t border-slate-900 flex items-center justify-between text-[11px]">
+                                <span id="test-stats" class="text-gray-400">Tests: 0 passed, 0 total</span>
+                                <span id="test-outcome" class="text-gray-400 font-semibold">Pending</span>
+                            </div>
                         </div>
-                        <div class="pt-2 border-t border-slate-900 flex items-center justify-between text-[11px]">
-                            <span id="test-stats" class="text-gray-400">Tests: 0 passed, 0 total</span>
-                            <span id="test-outcome" class="text-gray-400 font-semibold">Pending</span>
+
+                        <!-- AI PLAYGROUND TAB CONTENT -->
+                        <div id="tab-content-ai" class="space-y-3 hidden">
+                            <div
+                                class="flex items-center justify-between text-xs text-gray-500 border-b border-slate-900 pb-2">
+                                <span>AI Assistant Integrator</span>
+                                <span class="text-purple-400 flex items-center gap-1"><i data-lucide="sparkles"
+                                        class="w-3 h-3"></i> Ready</span>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <button onclick="runAiSimulation('schema')"
+                                    class="px-2.5 py-1 bg-white/5 hover:bg-white/10 rounded text-[11px] text-gray-300">Generate
+                                    Schema</button>
+                                <button onclick="runAiSimulation('auth')"
+                                    class="px-2.5 py-1 bg-white/5 hover:bg-white/10 rounded text-[11px] text-gray-300">Create
+                                    Auth Middleware</button>
+                            </div>
+                            <div class="bg-black/30 p-2.5 rounded border border-white/5 h-28 overflow-y-auto font-mono text-[11px] text-gray-300"
+                                id="ai-console-output">
+                                Select a task to simulate how custom AI automations are designed and coded.
+                            </div>
                         </div>
                     </div>
-
-                    <!-- AI PLAYGROUND TAB CONTENT -->
-                    <div id="tab-content-ai" class="space-y-3 hidden">
-                        <div class="flex items-center justify-between text-xs text-gray-500 border-b border-slate-900 pb-2">
-                            <span>AI Assistant Integrator</span>
-                            <span class="text-purple-400 flex items-center gap-1"><i data-lucide="sparkles" class="w-3 h-3"></i> Ready</span>
-                        </div>
-                        <div class="flex flex-wrap gap-2">
-                            <button onclick="runAiSimulation('schema')" class="px-2.5 py-1 bg-white/5 hover:bg-white/10 rounded text-[11px] text-gray-300">Generate Schema</button>
-                            <button onclick="runAiSimulation('auth')" class="px-2.5 py-1 bg-white/5 hover:bg-white/10 rounded text-[11px] text-gray-300">Create Auth Middleware</button>
-                        </div>
-                        <div class="bg-black/30 p-2.5 rounded border border-white/5 h-28 overflow-y-auto font-mono text-[11px] text-gray-300" id="ai-console-output">
-                            Select a task to simulate how custom AI automations are designed and coded.
-                        </div>
-                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- SECTION 2: SERVICES (WHAT I BUILD) -->
-    <section class="py-24 px-6 max-w-7xl mx-auto reveal" id="services">
-        <div class="text-center space-y-4 mb-16">
-            <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-slate-900">What We Build</h2>
-            <p class="text-slate-500 max-w-2xl mx-auto text-base">
-                Engineering reliable software solutions customized for startups, brands, and businesses.
-            </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Service 1 -->
-            <div class="glass-card p-8 rounded-2xl flex flex-col justify-between group">
-                <div>
-                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-brand-blue mb-6 group-hover:scale-110 transition-transform duration-300">
-                        <i data-lucide="layout" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3 font-display">Web Application Development</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">
-                        Responsive, superfast web applications built with Next.js, React, and Angular. Clean component architectures focused on performance, conversions, and seamless mobile UX.
-                    </p>
-                </div>
-                <div class="mt-8 flex items-center gap-2 text-xs font-semibold text-brand-blue group-hover:gap-3 transition-all">
-                    <span>Explore Solutions</span> <i data-lucide="chevron-right" class="w-4 h-4"></i>
-                </div>
-            </div>
-
-            <!-- Service 2 -->
-            <div class="glass-card p-8 rounded-2xl flex flex-col justify-between group">
-                <div>
-                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-brand-purple mb-6 group-hover:scale-110 transition-transform duration-300">
-                        <i data-lucide="smartphone" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3 font-display">Android Application Development</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">
-                        Feature-rich mobile applications utilizing native patterns. Optimized background workers, offline caching, offline databases, and slick interactive animations.
-                    </p>
-                </div>
-                <div class="mt-8 flex items-center gap-2 text-xs font-semibold text-brand-purple group-hover:gap-3 transition-all">
-                    <span>Explore Solutions</span> <i data-lucide="chevron-right" class="w-4 h-4"></i>
-                </div>
-            </div>
-
-            <!-- Service 3 -->
-            <div class="glass-card p-8 rounded-2xl flex flex-col justify-between group">
-                <div>
-                    <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-brand-pink mb-6 group-hover:scale-110 transition-transform duration-300">
-                        <i data-lucide="settings-2" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3 font-display">Business Automation</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">
-                        Scale operations and save manual labor. Tailored scripts, background pipelines, headless web scrapers, automated alert triggers, and sheet report integrations.
-                    </p>
-                </div>
-                <div class="mt-8 flex items-center gap-2 text-xs font-semibold text-brand-pink group-hover:gap-3 transition-all">
-                    <span>Explore Solutions</span> <i data-lucide="chevron-right" class="w-4 h-4"></i>
-                </div>
-            </div>
-
-            <!-- Service 4 -->
-            <div class="glass-card p-8 rounded-2xl flex flex-col justify-between group">
-                <div>
-                    <div class="w-12 h-12 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-600 mb-6 group-hover:scale-110 transition-transform duration-300">
-                        <i data-lucide="link" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3 font-display">API Development & Integration</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">
-                        Secure RESTful and GraphQL backend microservices. Integrations with payment gateways, CRM tools, authentication nodes, transactional mail platforms, and webhook handlers.
-                    </p>
-                </div>
-                <div class="mt-8 flex items-center gap-2 text-xs font-semibold text-teal-600 group-hover:gap-3 transition-all">
-                    <span>Explore Solutions</span> <i data-lucide="chevron-right" class="w-4 h-4"></i>
-                </div>
-            </div>
-
-            <!-- Service 5 -->
-            <div class="glass-card p-8 rounded-2xl flex flex-col justify-between group">
-                <div>
-                    <div class="w-12 h-12 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-600 mb-6 group-hover:scale-110 transition-transform duration-300">
-                        <i data-lucide="shield-check" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3 font-display">Test Automation Solutions</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">
-                        Custom end-to-end framework creations using Playwright, Selenium, and RestAssured. Keep deployments smooth and robust with CI/CD validation gates that catch bugs.
-                    </p>
-                </div>
-                <div class="mt-8 flex items-center gap-2 text-xs font-semibold text-orange-600 group-hover:gap-3 transition-all">
-                    <span>Explore Solutions</span> <i data-lucide="chevron-right" class="w-4 h-4"></i>
-                </div>
-            </div>
-
-            <!-- Service 6 -->
-            <div class="glass-card p-8 rounded-2xl flex flex-col justify-between group">
-                <div>
-                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-brand-purple mb-6 group-hover:scale-110 transition-transform duration-300">
-                        <i data-lucide="sparkles" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3 font-display">AI-Powered Applications</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">
-                        Intelligent integrations with OpenAI, Anthropic, or Gemini API engines. Design custom agent flows, parsing automations, vector storage, and automated semantic search blocks.
-                    </p>
-                </div>
-                <div class="mt-8 flex items-center gap-2 text-xs font-semibold text-brand-purple group-hover:gap-3 transition-all">
-                    <span>Explore Solutions</span> <i data-lucide="chevron-right" class="w-4 h-4"></i>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 3: FEATURED PRODUCTS -->
-    <section class="py-24 px-6 max-w-7xl mx-auto reveal" id="products">
-        <div class="text-center space-y-4 mb-16">
-            <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-slate-900">Featured Products</h2>
-            <p class="text-slate-500 max-w-2xl mx-auto text-base">
-                In-house software playgrounds, developer platforms, and production-ready applications.
-            </p>
-        </div>
-
-        <div id="products-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Dynamically populated by JavaScript -->
-        </div>
-
-        <div id="products-expand-container" class="mt-12 flex justify-center hidden">
-            <button id="products-expand-btn" class="px-8 py-3.5 bg-slate-100 border border-slate-200 text-slate-700 rounded-xl font-bold hover:bg-slate-200/60 transition-colors flex items-center gap-2">
-                <span id="expand-btn-text">Show All Products</span>
-                <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-300" id="products-expand-icon"></i>
-            </button>
-        </div>
-    </section>
-
-    <!-- SECTION 4: WHY WORK WITH US -->
-    <section class="py-24 px-6 max-w-7xl mx-auto reveal" id="about">
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
-            <!-- Left Header Intro -->
-            <div class="space-y-6 lg:col-span-1">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-purple/10 border border-brand-purple/20 text-xs font-semibold text-brand-purple">
-                    Value Proposition
-                </div>
-                <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-slate-900 leading-tight">
-                    Engineering Built on <br class="hidden md:inline">
-                    Trust and Delivery
-                </h2>
-                <p class="text-slate-600 text-base leading-relaxed">
-                    By combining engineering knowledge with clean architectural design patterns, we ensure your products load rapidly, scale easily, and operate securely.
+        <!-- SECTION 2: SERVICES (WHAT I BUILD) -->
+        <section class="py-24 px-6 max-w-7xl mx-auto reveal" id="services">
+            <div class="text-center space-y-4 mb-16">
+                <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-slate-900">What We Build</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto text-base">
+                    Engineering reliable software solutions customized for startups, brands, and businesses.
                 </p>
-                <div class="pt-4">
-                    <a href="#contact" class="inline-flex items-center gap-2 text-sm font-bold text-brand-blue hover:text-brand-blue/80 transition-colors group">
-                        Let's Talk Business <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
-                    </a>
-                </div>
             </div>
 
-            <!-- Value Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:col-span-2">
-                <!-- Value 1 -->
-                <div class="glass-card p-6 rounded-2xl flex gap-4">
-                    <div class="p-3 bg-brand-blue/10 border border-brand-blue/20 rounded-xl text-brand-blue h-fit">
-                        <i data-lucide="code-2" class="w-5 h-5"></i>
-                    </div>
-                    <div class="space-y-2">
-                        <h4 class="font-bold text-slate-900 text-base font-display">Full Stack Development</h4>
-                        <p class="text-slate-600 text-sm leading-relaxed">Handling UI, APIs, databases, hosting, and configuration from start to finish.</p>
-                    </div>
-                </div>
-
-                <!-- Value 2 -->
-                <div class="glass-card p-6 rounded-2xl flex gap-4">
-                    <div class="p-3 bg-brand-purple/10 border border-brand-purple/20 rounded-xl text-brand-purple h-fit">
-                        <i data-lucide="zap" class="w-5 h-5"></i>
-                    </div>
-                    <div class="space-y-2">
-                        <h4 class="font-bold text-slate-900 text-base font-display">Fast Delivery</h4>
-                        <p class="text-slate-600 text-sm leading-relaxed">Using proven blueprints and pre-built tooling to deliver production code in days.</p>
-                    </div>
-                </div>
-
-                <!-- Value 3 -->
-                <div class="glass-card p-6 rounded-2xl flex gap-4">
-                    <div class="p-3 bg-brand-pink/10 border border-brand-pink/20 rounded-xl text-brand-pink h-fit">
-                        <i data-lucide="git-merge" class="w-5 h-5"></i>
-                    </div>
-                    <div class="space-y-2">
-                        <h4 class="font-bold text-slate-900 text-base font-display">Scalable Architecture</h4>
-                        <p class="text-slate-600 text-sm leading-relaxed">Designing clean modular code systems that grow seamlessly as users and features scale.</p>
-                    </div>
-                </div>
-
-                <!-- Value 4 -->
-                <div class="glass-card p-6 rounded-2xl flex gap-4">
-                    <div class="p-3 bg-teal-500/10 border border-teal-500/20 rounded-xl text-teal-600 h-fit">
-                        <i data-lucide="cpu" class="w-5 h-5"></i>
-                    </div>
-                    <div class="space-y-2">
-                        <h4 class="font-bold text-slate-900 text-base font-display">Modern Tech Stack</h4>
-                        <p class="text-slate-600 text-sm leading-relaxed">Developing with secure, developer-friendly platforms for long-term stability.</p>
-                    </div>
-                </div>
-
-                <!-- Value 5 -->
-                <div class="glass-card p-6 rounded-2xl flex gap-4">
-                    <div class="p-3 bg-orange-500/10 border border-orange-500/20 rounded-xl text-orange-600 h-fit">
-                        <i data-lucide="life-buoy" class="w-5 h-5"></i>
-                    </div>
-                    <div class="space-y-2">
-                        <h4 class="font-bold text-slate-900 text-base font-display">Long Term Support</h4>
-                        <p class="text-slate-600 text-sm leading-relaxed">Ongoing help, platform maintenance, API audits, and system improvements.</p>
-                    </div>
-                </div>
-
-                <!-- Value 6 -->
-                <div class="glass-card p-6 rounded-2xl flex gap-4">
-                    <div class="p-3 bg-emerald-500/10 border border-emerald-500/20 rounded-xl text-emerald-600 h-fit">
-                        <i data-lucide="credit-card" class="w-5 h-5"></i>
-                    </div>
-                    <div class="space-y-2">
-                        <h4 class="font-bold text-slate-900 text-base font-display">Cost Effective Solutions</h4>
-                        <p class="text-slate-600 text-sm leading-relaxed">Smart technical choices that minimize cloud server expenses and database costs.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 5: PROCESS (THE WORKFLOW) -->
-    <section class="py-24 px-6 max-w-7xl mx-auto reveal" id="process">
-        <div class="text-center space-y-4 mb-16">
-            <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-slate-900">How We Build</h2>
-            <p class="text-slate-500 max-w-2xl mx-auto text-base">
-                A transparent, step-by-step methodology ensures zero friction and reliable project deliveries.
-            </p>
-        </div>
-
-        <!-- Timeline -->
-        <div class="relative flex flex-col gap-10 md:gap-0 md:flex-row justify-between items-start">
-            <!-- Central connecting line (Desktop only) -->
-            <div class="hidden md:block absolute top-10 left-10 right-10 h-0.5 bg-gradient-to-r from-brand-blue via-brand-purple to-brand-pink opacity-40 -z-10"></div>
-
-            <!-- Step 1 -->
-            <div class="flex-1 w-full md:px-4 group">
-                <div class="flex items-center gap-4 md:flex-col md:items-start space-y-3">
-                    <div class="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-white border border-slate-200 flex items-center justify-center font-bold text-slate-800 text-lg font-mono group-hover:border-brand-blue group-hover:text-brand-blue transition-all">
-                        01
-                    </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service 1 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between group">
                     <div>
-                        <h4 class="text-lg font-bold text-slate-900 font-display">Requirement</h4>
-                        <p class="text-slate-500 text-sm mt-1 leading-relaxed">Deep-dive audit into feature requirements, target audiences, and project milestones.</p>
+                        <div
+                            class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-brand-blue mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i data-lucide="layout" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 font-display">Web Application Development</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Responsive, superfast web applications built with Next.js, React, and Angular. Clean
+                            component architectures focused on performance, conversions, and seamless mobile UX.
+                        </p>
+                    </div>
+                    <div
+                        class="mt-8 flex items-center gap-2 text-xs font-semibold text-brand-blue group-hover:gap-3 transition-all">
+                        <span>Explore Solutions</span> <i data-lucide="chevron-right" class="w-4 h-4"></i>
                     </div>
                 </div>
-            </div>
 
-            <!-- Step 2 -->
-            <div class="flex-1 w-full md:px-4 group">
-                <div class="flex items-center gap-4 md:flex-col md:items-start space-y-3">
-                    <div class="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-white border border-slate-200 flex items-center justify-center font-bold text-slate-800 text-lg font-mono group-hover:border-brand-purple group-hover:text-brand-purple transition-all">
-                        02
-                    </div>
+                <!-- Service 2 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between group">
                     <div>
-                        <h4 class="text-lg font-bold text-slate-900 font-display">Planning</h4>
-                        <p class="text-slate-500 text-sm mt-1 leading-relaxed">Drafting layout wireframes, software architecture mapping, and API specifications.</p>
+                        <div
+                            class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-brand-purple mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i data-lucide="smartphone" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 font-display">Android Application Development
+                        </h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Feature-rich mobile applications utilizing native patterns. Optimized background workers,
+                            offline caching, offline databases, and slick interactive animations.
+                        </p>
+                    </div>
+                    <div
+                        class="mt-8 flex items-center gap-2 text-xs font-semibold text-brand-purple group-hover:gap-3 transition-all">
+                        <span>Explore Solutions</span> <i data-lucide="chevron-right" class="w-4 h-4"></i>
                     </div>
                 </div>
-            </div>
 
-            <!-- Step 3 -->
-            <div class="flex-1 w-full md:px-4 group">
-                <div class="flex items-center gap-4 md:flex-col md:items-start space-y-3">
-                    <div class="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-white border border-slate-200 flex items-center justify-center font-bold text-slate-800 text-lg font-mono group-hover:border-brand-pink group-hover:text-brand-pink transition-all">
-                        03
-                    </div>
+                <!-- Service 3 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between group">
                     <div>
-                        <h4 class="text-lg font-bold text-slate-900 font-display">Development</h4>
-                        <p class="text-slate-500 text-sm mt-1 leading-relaxed">Writing clean component mockups, stable API servers, and database integrations.</p>
+                        <div
+                            class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-brand-pink mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i data-lucide="settings-2" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 font-display">Business Automation</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Scale operations and save manual labor. Tailored scripts, background pipelines, headless web
+                            scrapers, automated alert triggers, and sheet report integrations.
+                        </p>
+                    </div>
+                    <div
+                        class="mt-8 flex items-center gap-2 text-xs font-semibold text-brand-pink group-hover:gap-3 transition-all">
+                        <span>Explore Solutions</span> <i data-lucide="chevron-right" class="w-4 h-4"></i>
                     </div>
                 </div>
-            </div>
 
-            <!-- Step 4 -->
-            <div class="flex-1 w-full md:px-4 group">
-                <div class="flex items-center gap-4 md:flex-col md:items-start space-y-3">
-                    <div class="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-white border border-slate-200 flex items-center justify-center font-bold text-slate-800 text-lg font-mono group-hover:border-teal-600 group-hover:text-teal-600 transition-all">
-                        04
-                    </div>
+                <!-- Service 4 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between group">
                     <div>
-                        <h4 class="text-lg font-bold text-slate-900 font-display">Testing</h4>
-                        <p class="text-slate-500 text-sm mt-1 leading-relaxed">Implementing thorough unit asserts, load pipelines, and browser automation test scripts.</p>
+                        <div
+                            class="w-12 h-12 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-600 mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i data-lucide="link" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 font-display">API Development & Integration
+                        </h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Secure RESTful and GraphQL backend microservices. Integrations with payment gateways, CRM
+                            tools, authentication nodes, transactional mail platforms, and webhook handlers.
+                        </p>
+                    </div>
+                    <div
+                        class="mt-8 flex items-center gap-2 text-xs font-semibold text-teal-600 group-hover:gap-3 transition-all">
+                        <span>Explore Solutions</span> <i data-lucide="chevron-right" class="w-4 h-4"></i>
                     </div>
                 </div>
-            </div>
 
-            <!-- Step 5 -->
-            <div class="flex-1 w-full md:px-4 group">
-                <div class="flex items-center gap-4 md:flex-col md:items-start space-y-3">
-                    <div class="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-white border border-slate-200 flex items-center justify-center font-bold text-slate-800 text-lg font-mono group-hover:border-orange-500 group-hover:text-orange-500 transition-all">
-                        05
-                    </div>
+                <!-- Service 5 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between group">
                     <div>
-                        <h4 class="text-lg font-bold text-slate-900 font-display">Deployment</h4>
-                        <p class="text-slate-500 text-sm mt-1 leading-relaxed">Staging configurations, secure SSL setups, and production hosting pushes.</p>
+                        <div
+                            class="w-12 h-12 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-600 mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i data-lucide="shield-check" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 font-display">Test Automation Solutions</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Custom end-to-end framework creations using Playwright, Selenium, and RestAssured. Keep
+                            deployments smooth and robust with CI/CD validation gates that catch bugs.
+                        </p>
+                    </div>
+                    <div
+                        class="mt-8 flex items-center gap-2 text-xs font-semibold text-orange-600 group-hover:gap-3 transition-all">
+                        <span>Explore Solutions</span> <i data-lucide="chevron-right" class="w-4 h-4"></i>
                     </div>
                 </div>
-            </div>
 
-            <!-- Step 6 -->
-            <div class="flex-1 w-full md:px-4 group">
-                <div class="flex items-center gap-4 md:flex-col md:items-start space-y-3">
-                    <div class="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-white border border-slate-200 flex items-center justify-center font-bold text-slate-800 text-lg font-mono group-hover:border-emerald-600 group-hover:text-emerald-600 transition-all">
-                        06
-                    </div>
+                <!-- Service 6 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between group">
                     <div>
-                        <h4 class="text-lg font-bold text-slate-900 font-display">Support</h4>
-                        <p class="text-slate-500 text-sm mt-1 leading-relaxed">Server upkeep checks, performance tuning adjustments, and future feature upgrades.</p>
+                        <div
+                            class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-brand-purple mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i data-lucide="sparkles" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 font-display">AI-Powered Applications</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Intelligent integrations with OpenAI, Anthropic, or Gemini API engines. Design custom agent
+                            flows, parsing automations, vector storage, and automated semantic search blocks.
+                        </p>
+                    </div>
+                    <div
+                        class="mt-8 flex items-center gap-2 text-xs font-semibold text-brand-purple group-hover:gap-3 transition-all">
+                        <span>Explore Solutions</span> <i data-lucide="chevron-right" class="w-4 h-4"></i>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- SECTION 6: TECHNOLOGY STACK -->
-    <section class="py-24 px-6 max-w-7xl mx-auto reveal" id="stack">
-        <div class="text-center space-y-4 mb-16">
-            <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-slate-900">Technology Stack</h2>
-            <p class="text-slate-500 max-w-2xl mx-auto text-base">
-                Leveraging trusted frameworks, databases, and deployment platforms to engineer solutions.
-            </p>
-        </div>
+        <!-- SECTION 3: FEATURED PRODUCTS -->
+        <section class="py-24 px-6 max-w-7xl mx-auto reveal" id="products">
+            <div class="text-center space-y-4 mb-16">
+                <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-slate-900">Featured Products</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto text-base">
+                    In-house software playgrounds, developer platforms, and production-ready applications.
+                </p>
+            </div>
 
-        <!-- Filter Controls -->
-        <div class="flex flex-wrap justify-center items-center gap-3 mb-12 max-w-2xl mx-auto font-mono text-xs">
-            <button onclick="filterStack('all')" id="stack-btn-all" class="stack-filter-btn px-4 py-2 rounded-full border border-brand-blue bg-blue-50 text-brand-blue font-bold transition-all">ALL</button>
-            <button onclick="filterStack('frontend')" id="stack-btn-frontend" class="stack-filter-btn px-4 py-2 rounded-full border border-slate-200 text-slate-500 hover:text-slate-800 transition-all">FRONTEND</button>
-            <button onclick="filterStack('backend')" id="stack-btn-backend" class="stack-filter-btn px-4 py-2 rounded-full border border-slate-200 text-slate-500 hover:text-slate-800 transition-all">BACKEND</button>
-            <button onclick="filterStack('database')" id="stack-btn-database" class="stack-filter-btn px-4 py-2 rounded-full border border-slate-200 text-slate-500 hover:text-slate-800 transition-all">DATABASE</button>
-            <button onclick="filterStack('automation')" id="stack-btn-automation" class="stack-filter-btn px-4 py-2 rounded-full border border-slate-200 text-slate-500 hover:text-slate-800 transition-all">AUTOMATION</button>
-            <button onclick="filterStack('cloud')" id="stack-btn-cloud" class="stack-filter-btn px-4 py-2 rounded-full border border-slate-200 text-slate-500 hover:text-slate-800 transition-all">CLOUD & CD</button>
-        </div>
+            <div id="products-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Dynamically populated by JavaScript -->
+            </div>
 
-        <!-- Tech Grid -->
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4" id="tech-badge-container">
-            <!-- React -->
-            <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100" data-category="frontend">
-                <i data-lucide="code" class="w-5 h-5 text-brand-blue"></i>
-                <span class="font-semibold text-slate-800 text-sm">React</span>
+            <div id="products-expand-container" class="mt-12 flex justify-center hidden">
+                <button id="products-expand-btn"
+                    class="px-8 py-3.5 bg-slate-100 border border-slate-200 text-slate-700 rounded-xl font-bold hover:bg-slate-200/60 transition-colors flex items-center gap-2">
+                    <span id="expand-btn-text">Show All Products</span>
+                    <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-300"
+                        id="products-expand-icon"></i>
+                </button>
             </div>
-            <!-- Next.js -->
-            <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100" data-category="frontend">
-                <i data-lucide="triangle" class="w-5 h-5 text-slate-800"></i>
-                <span class="font-semibold text-slate-800 text-sm">Next.js</span>
-            </div>
-            <!-- TypeScript -->
-            <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100" data-category="frontend">
-                <i data-lucide="file-code-2" class="w-5 h-5 text-brand-blue"></i>
-                <span class="font-semibold text-slate-800 text-sm">TypeScript</span>
-            </div>
-            <!-- Angular -->
-            <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100" data-category="frontend">
-                <i data-lucide="file-code" class="w-5 h-5 text-red-500"></i>
-                <span class="font-semibold text-slate-800 text-sm">Angular</span>
-            </div>
-            <!-- Java -->
-            <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100" data-category="backend">
-                <i data-lucide="coffee" class="w-5 h-5 text-orange-600"></i>
-                <span class="font-semibold text-slate-800 text-sm">Java</span>
-            </div>
-            <!-- Spring Boot -->
-            <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100" data-category="backend">
-                <i data-lucide="server" class="w-5 h-5 text-emerald-600"></i>
-                <span class="font-semibold text-slate-800 text-sm">Spring Boot</span>
-            </div>
-            <!-- Node.js -->
-            <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100" data-category="backend">
-                <i data-lucide="terminal" class="w-5 h-5 text-green-600"></i>
-                <span class="font-semibold text-slate-800 text-sm">Node.js</span>
-            </div>
-            <!-- Python -->
-            <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100" data-category="backend">
-                <i data-lucide="file-type-2" class="w-5 h-5 text-yellow-600"></i>
-                <span class="font-semibold text-slate-800 text-sm">Python</span>
-            </div>
-            <!-- PostgreSQL -->
-            <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100" data-category="database">
-                <i data-lucide="database" class="w-5 h-5 text-brand-blue"></i>
-                <span class="font-semibold text-slate-800 text-sm">PostgreSQL</span>
-            </div>
-            <!-- MySQL -->
-            <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100" data-category="database">
-                <i data-lucide="database" class="w-5 h-5 text-brand-purple"></i>
-                <span class="font-semibold text-slate-800 text-sm">MySQL</span>
-            </div>
-            <!-- Supabase -->
-            <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100" data-category="database">
-                <i data-lucide="database" class="w-5 h-5 text-emerald-600"></i>
-                <span class="font-semibold text-slate-800 text-sm">Supabase</span>
-            </div>
-            <!-- Selenium -->
-            <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100" data-category="automation">
-                <i data-lucide="shield-check" class="w-5 h-5 text-green-600"></i>
-                <span class="font-semibold text-slate-800 text-sm">Selenium</span>
-            </div>
-            <!-- Playwright -->
-            <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100" data-category="automation">
-                <i data-lucide="test-tube" class="w-5 h-5 text-emerald-600"></i>
-                <span class="font-semibold text-slate-800 text-sm">Playwright</span>
-            </div>
-            <!-- REST Assured -->
-            <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100" data-category="automation">
-                <i data-lucide="refresh-cw" class="w-5 h-5 text-brand-blue"></i>
-                <span class="font-semibold text-slate-800 text-sm">REST Assured</span>
-            </div>
-            <!-- Cloudflare -->
-            <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100" data-category="cloud">
-                <i data-lucide="cloud-lightning" class="w-5 h-5 text-orange-500"></i>
-                <span class="font-semibold text-slate-800 text-sm">Cloudflare</span>
-            </div>
-            <!-- AWS -->
-            <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100" data-category="cloud">
-                <i data-lucide="cloud" class="w-5 h-5 text-yellow-600"></i>
-                <span class="font-semibold text-slate-800 text-sm">AWS</span>
-            </div>
-            <!-- Docker -->
-            <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100" data-category="cloud">
-                <i data-lucide="box" class="w-5 h-5 text-cyan-600"></i>
-                <span class="font-semibold text-slate-800 text-sm">Docker</span>
-            </div>
-            <!-- GitHub Actions -->
-            <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100" data-category="cloud">
-                <i data-lucide="git-branch" class="w-5 h-5 text-slate-500"></i>
-                <span class="font-semibold text-slate-800 text-sm">GitHub</span>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- SECTION 7: TESTIMONIAL PLACEHOLDER -->
-    <section class="py-24 px-6 max-w-7xl mx-auto reveal" id="testimonials">
-        <div class="text-center space-y-4 mb-16">
-            <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-slate-900">Client Feedbacks</h2>
-            <p class="text-slate-500 max-w-2xl mx-auto text-base">
-                What startup founders, engineers, and product owners say about working together.
-            </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <!-- Testimonial 1 -->
-            <div class="glass-card p-8 rounded-2xl relative border-slate-100 flex flex-col justify-between">
-                <div class="space-y-4">
-                    <div class="flex text-yellow-500 gap-1">
-                        <i data-lucide="star" class="w-4.5 h-4.5 fill-current"></i>
-                        <i data-lucide="star" class="w-4.5 h-4.5 fill-current"></i>
-                        <i data-lucide="star" class="w-4.5 h-4.5 fill-current"></i>
-                        <i data-lucide="star" class="w-4.5 h-4.5 fill-current"></i>
-                        <i data-lucide="star" class="w-4.5 h-4.5 fill-current"></i>
+        <!-- SECTION 4: WHY WORK WITH US -->
+        <section class="py-24 px-6 max-w-7xl mx-auto reveal" id="about">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+                <!-- Left Header Intro -->
+                <div class="space-y-6 lg:col-span-1">
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-purple/10 border border-brand-purple/20 text-xs font-semibold text-brand-purple">
+                        Value Proposition
                     </div>
-                    <p class="text-slate-700 italic text-sm leading-relaxed">
-                        "The automation testing framework built for our SaaS dashboard has cut down our QA release timeline by 70%. Superb documentation and clean TypeScript design patterns."
-                    </p>
-                </div>
-                <div class="mt-8 flex items-center gap-3 border-t border-slate-100 pt-4">
-                    <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-brand-blue to-brand-purple flex items-center justify-center font-bold text-xs text-white">
-                        AM
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-sm text-slate-900">Arjun Mehta</h4>
-                        <p class="text-xs text-slate-500">CTO, AlphaTech Solutions</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Testimonial 2 -->
-            <div class="glass-card p-8 rounded-2xl relative border-slate-100 flex flex-col justify-between">
-                <div class="space-y-4">
-                    <div class="flex text-yellow-500 gap-1">
-                        <i data-lucide="star" class="w-4.5 h-4.5 fill-current"></i>
-                        <i data-lucide="star" class="w-4.5 h-4.5 fill-current"></i>
-                        <i data-lucide="star" class="w-4.5 h-4.5 fill-current"></i>
-                        <i data-lucide="star" class="w-4.5 h-4.5 fill-current"></i>
-                        <i data-lucide="star" class="w-4.5 h-4.5 fill-current"></i>
-                    </div>
-                    <p class="text-slate-700 italic text-sm leading-relaxed">
-                        "Delivered a production-ready NextJS landing page with fully integrated backend API triggers in less than two weeks. Responsive and very professional. Highly recommended!"
-                    </p>
-                </div>
-                <div class="mt-8 flex items-center gap-3 border-t border-slate-100 pt-4">
-                    <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-brand-purple to-brand-pink flex items-center justify-center font-bold text-xs text-white">
-                        SH
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-sm text-slate-900">Sarah Holtz</h4>
-                        <p class="text-xs text-slate-500">Founder, Scale Creative</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 8: CONTACT / LEAD GENERATION -->
-    <section class="py-24 px-6 max-w-7xl mx-auto reveal" id="contact">
-        <div class="glass-panel border-slate-200/80 rounded-3xl p-8 md:p-12 lg:p-16 relative overflow-hidden shadow-xl">
-            <!-- Subtle backdrop background decorations -->
-            <div class="absolute -top-12 -right-12 w-48 h-48 bg-brand-purple/5 rounded-full blur-3xl"></div>
-            <div class="absolute -bottom-12 -left-12 w-48 h-48 bg-brand-blue/5 rounded-full blur-3xl"></div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 relative z-10">
-                <!-- Info pane -->
-                <div class="lg:col-span-5 space-y-6">
                     <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-slate-900 leading-tight">
-                        Have an Idea? <br>Let's Build It.
+                        Engineering Built on <br class="hidden md:inline">
+                        Trust and Delivery
                     </h2>
-                    <p class="text-slate-600 text-sm leading-relaxed">
-                        Whether you need a specialized automation suite, a high-converting web presence, or advice on API scaling, we are ready to turn your product vision into code.
+                    <p class="text-slate-600 text-base leading-relaxed">
+                        By combining engineering knowledge with clean architectural design patterns, we ensure your
+                        products load rapidly, scale easily, and operate securely.
                     </p>
-
-                    <!-- Trust factors -->
-                    <div class="space-y-3 pt-4 border-t border-slate-100 text-xs text-slate-500 font-mono">
-                        <div class="flex items-center gap-3">
-                            <i data-lucide="shield-check" class="w-4 h-4 text-emerald-600"></i>
-                            <span>NDAs supported before sharing ideas.</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <i data-lucide="clock" class="w-4 h-4 text-brand-blue"></i>
-                            <span>Replies expected within 24 business hours.</span>
-                        </div>
-                    </div>
-
-                    <!-- Channels -->
-                    <div class="space-y-4 pt-4">
-                        <span class="text-[10px] font-mono text-slate-400 uppercase tracking-widest block">Direct Channels</span>
-                        
-                        <div class="flex flex-col gap-3 font-medium text-sm text-slate-600">
-                            <!-- Email -->
-                            <a href="mailto:hello@futurelab.co.in" class="flex items-center gap-3 hover:text-slate-900 transition-colors">
-                                <div class="w-8 h-8 rounded-lg bg-slate-100 flex items-center justify-center text-slate-500">
-                                    <i data-lucide="mail" class="w-4 h-4"></i>
-                                </div>
-                                <span>hello@futurelab.co.in</span>
-                            </a>
-                            <!-- WhatsApp -->
-                            <a href="https://wa.me/919718214423" target="_blank" class="flex items-center gap-3 hover:text-slate-900 transition-colors">
-                                <div class="w-8 h-8 rounded-lg bg-slate-100 flex items-center justify-center text-slate-500">
-                                    <i data-lucide="message-square" class="w-4 h-4"></i>
-                                </div>
-                                <span>WhatsApp: Chat instantly</span>
-                            </a>
-                            <!-- LinkedIn -->
-                            <a href="https://linkedin.com/company/futurelab" target="_blank" class="flex items-center gap-3 hover:text-slate-900 transition-colors">
-                                <div class="w-8 h-8 rounded-lg bg-slate-100 flex items-center justify-center text-slate-500">
-                                    <i data-lucide="linkedin" class="w-4 h-4"></i>
-                                </div>
-                                <span>LinkedIn Company Page</span>
-                            </a>
-                        </div>
+                    <div class="pt-4">
+                        <a href="#contact"
+                            class="inline-flex items-center gap-2 text-sm font-bold text-brand-blue hover:text-brand-blue/80 transition-colors group">
+                            Let's Talk Business <i data-lucide="arrow-right"
+                                class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Form pane -->
-                <div class="lg:col-span-7 bg-white/50 border border-slate-200/80 rounded-2xl p-6 md:p-8" id="contact-form-container">
-                    <form id="lead-form" onsubmit="handleFormSubmit(event)" class="space-y-5">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                            <div class="space-y-2">
-                                <label for="form-name" class="text-xs font-semibold text-slate-500">Your Name *</label>
-                                <input type="text" id="form-name" required class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-brand-blue transition-colors" placeholder="e.g. John Doe">
-                            </div>
-                            <div class="space-y-2">
-                                <label for="form-email" class="text-xs font-semibold text-slate-500">Email Address *</label>
-                                <input type="email" id="form-email" required class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-brand-blue transition-colors" placeholder="e.g. john@company.com">
-                            </div>
-                        </div>
-
-                        <div class="space-y-2">
-                            <label for="form-project" class="text-xs font-semibold text-slate-500">Required Service *</label>
-                            <select id="form-project" required class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-700 focus:outline-none focus:border-brand-blue transition-colors">
-                                <option value="" disabled selected>Select service need...</option>
-                                <option value="Web App">Web Application Development</option>
-                                <option value="Mobile App">Android App Development</option>
-                                <option value="Automation">Business Workflow Automation</option>
-                                <option value="Test Framework">QA/Test Automation Suite</option>
-                                <option value="AI Integration">Custom AI/LLM Integration</option>
-                                <option value="Other">Other Software Consultations</option>
-                            </select>
-                        </div>
-
-                        <div class="space-y-2">
-                            <label for="form-message" class="text-xs font-semibold text-slate-500">Project Goal / Details *</label>
-                            <textarea id="form-message" required rows="4" class="w-full bg-white border border-slate-200 rounded-xl p-4 text-sm text-slate-900 focus:outline-none focus:border-brand-blue transition-colors resize-none" placeholder="Provide a brief summary of the platform goals, stack needs, and deadlines..."></textarea>
-                        </div>
-
-                        <button type="submit" class="w-full py-4 bg-gradient-to-r from-brand-blue to-brand-purple rounded-xl font-bold text-white shadow-lg shadow-brand-blue/20 hover:shadow-brand-blue/35 hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-2">
-                            Send Proposal Message <i data-lucide="send" class="w-4 h-4"></i>
-                        </button>
-                    </form>
-
-                    <!-- Success State Screen (Hidden initially) -->
-                    <div id="form-success" class="hidden h-full flex flex-col justify-center items-center text-center py-10 space-y-6">
-                        <div class="w-16 h-16 rounded-full bg-emerald-500/10 border border-emerald-500/25 flex items-center justify-center text-emerald-600 shadow-lg shadow-emerald-500/5">
-                            <i data-lucide="check" class="w-8 h-8"></i>
+                <!-- Value Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:col-span-2">
+                    <!-- Value 1 -->
+                    <div class="glass-card p-6 rounded-2xl flex gap-4">
+                        <div class="p-3 bg-brand-blue/10 border border-brand-blue/20 rounded-xl text-brand-blue h-fit">
+                            <i data-lucide="code-2" class="w-5 h-5"></i>
                         </div>
                         <div class="space-y-2">
-                            <h4 class="text-xl font-bold font-display text-slate-900">Proposal Submitted Successfully</h4>
-                            <p class="text-slate-600 text-sm max-w-sm">
-                                Thank you for reaching out. We'll analyze your requirements and follow up via email within 24 hours.
-                            </p>
+                            <h4 class="font-bold text-slate-900 text-base font-display">Full Stack Development</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">Handling UI, APIs, databases, hosting, and
+                                configuration from start to finish.</p>
                         </div>
-                        <button onclick="resetLeadForm()" class="px-6 py-2.5 bg-slate-100 border border-slate-200 hover:bg-slate-200 rounded-xl text-xs font-bold transition-all text-slate-700">
-                            Send Another Message
-                        </button>
+                    </div>
+
+                    <!-- Value 2 -->
+                    <div class="glass-card p-6 rounded-2xl flex gap-4">
+                        <div
+                            class="p-3 bg-brand-purple/10 border border-brand-purple/20 rounded-xl text-brand-purple h-fit">
+                            <i data-lucide="zap" class="w-5 h-5"></i>
+                        </div>
+                        <div class="space-y-2">
+                            <h4 class="font-bold text-slate-900 text-base font-display">Fast Delivery</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">Using proven blueprints and pre-built
+                                tooling to deliver production code in days.</p>
+                        </div>
+                    </div>
+
+                    <!-- Value 3 -->
+                    <div class="glass-card p-6 rounded-2xl flex gap-4">
+                        <div class="p-3 bg-brand-pink/10 border border-brand-pink/20 rounded-xl text-brand-pink h-fit">
+                            <i data-lucide="git-merge" class="w-5 h-5"></i>
+                        </div>
+                        <div class="space-y-2">
+                            <h4 class="font-bold text-slate-900 text-base font-display">Scalable Architecture</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">Designing clean modular code systems that
+                                grow seamlessly as users and features scale.</p>
+                        </div>
+                    </div>
+
+                    <!-- Value 4 -->
+                    <div class="glass-card p-6 rounded-2xl flex gap-4">
+                        <div class="p-3 bg-teal-500/10 border border-teal-500/20 rounded-xl text-teal-600 h-fit">
+                            <i data-lucide="cpu" class="w-5 h-5"></i>
+                        </div>
+                        <div class="space-y-2">
+                            <h4 class="font-bold text-slate-900 text-base font-display">Modern Tech Stack</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">Developing with secure, developer-friendly
+                                platforms for long-term stability.</p>
+                        </div>
+                    </div>
+
+                    <!-- Value 5 -->
+                    <div class="glass-card p-6 rounded-2xl flex gap-4">
+                        <div class="p-3 bg-orange-500/10 border border-orange-500/20 rounded-xl text-orange-600 h-fit">
+                            <i data-lucide="life-buoy" class="w-5 h-5"></i>
+                        </div>
+                        <div class="space-y-2">
+                            <h4 class="font-bold text-slate-900 text-base font-display">Long Term Support</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">Ongoing help, platform maintenance, API
+                                audits, and system improvements.</p>
+                        </div>
+                    </div>
+
+                    <!-- Value 6 -->
+                    <div class="glass-card p-6 rounded-2xl flex gap-4">
+                        <div
+                            class="p-3 bg-emerald-500/10 border border-emerald-500/20 rounded-xl text-emerald-600 h-fit">
+                            <i data-lucide="credit-card" class="w-5 h-5"></i>
+                        </div>
+                        <div class="space-y-2">
+                            <h4 class="font-bold text-slate-900 text-base font-display">Cost Effective Solutions</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">Smart technical choices that minimize
+                                cloud server expenses and database costs.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- SECTION 5: PROCESS (THE WORKFLOW) -->
+        <section class="py-24 px-6 max-w-7xl mx-auto reveal" id="process">
+            <div class="text-center space-y-4 mb-16">
+                <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-slate-900">How We Build</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto text-base">
+                    A transparent, step-by-step methodology ensures zero friction and reliable project deliveries.
+                </p>
+            </div>
+
+            <!-- Timeline -->
+            <div class="relative flex flex-col gap-10 md:gap-0 md:flex-row justify-between items-start">
+                <!-- Central connecting line (Desktop only) -->
+                <div
+                    class="hidden md:block absolute top-10 left-10 right-10 h-0.5 bg-gradient-to-r from-brand-blue via-brand-purple to-brand-pink opacity-40 -z-10">
+                </div>
+
+                <!-- Step 1 -->
+                <div class="flex-1 w-full md:px-4 group">
+                    <div class="flex items-center gap-4 md:flex-col md:items-start space-y-3">
+                        <div
+                            class="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-white border border-slate-200 flex items-center justify-center font-bold text-slate-800 text-lg font-mono group-hover:border-brand-blue group-hover:text-brand-blue transition-all">
+                            01
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-900 font-display">Requirement</h4>
+                            <p class="text-slate-500 text-sm mt-1 leading-relaxed">Deep-dive audit into feature
+                                requirements, target audiences, and project milestones.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex-1 w-full md:px-4 group">
+                    <div class="flex items-center gap-4 md:flex-col md:items-start space-y-3">
+                        <div
+                            class="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-white border border-slate-200 flex items-center justify-center font-bold text-slate-800 text-lg font-mono group-hover:border-brand-purple group-hover:text-brand-purple transition-all">
+                            02
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-900 font-display">Planning</h4>
+                            <p class="text-slate-500 text-sm mt-1 leading-relaxed">Drafting layout wireframes, software
+                                architecture mapping, and API specifications.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex-1 w-full md:px-4 group">
+                    <div class="flex items-center gap-4 md:flex-col md:items-start space-y-3">
+                        <div
+                            class="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-white border border-slate-200 flex items-center justify-center font-bold text-slate-800 text-lg font-mono group-hover:border-brand-pink group-hover:text-brand-pink transition-all">
+                            03
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-900 font-display">Development</h4>
+                            <p class="text-slate-500 text-sm mt-1 leading-relaxed">Writing clean component mockups,
+                                stable API servers, and database integrations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="flex-1 w-full md:px-4 group">
+                    <div class="flex items-center gap-4 md:flex-col md:items-start space-y-3">
+                        <div
+                            class="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-white border border-slate-200 flex items-center justify-center font-bold text-slate-800 text-lg font-mono group-hover:border-teal-600 group-hover:text-teal-600 transition-all">
+                            04
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-900 font-display">Testing</h4>
+                            <p class="text-slate-500 text-sm mt-1 leading-relaxed">Implementing thorough unit asserts,
+                                load pipelines, and browser automation test scripts.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="flex-1 w-full md:px-4 group">
+                    <div class="flex items-center gap-4 md:flex-col md:items-start space-y-3">
+                        <div
+                            class="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-white border border-slate-200 flex items-center justify-center font-bold text-slate-800 text-lg font-mono group-hover:border-orange-500 group-hover:text-orange-500 transition-all">
+                            05
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-900 font-display">Deployment</h4>
+                            <p class="text-slate-500 text-sm mt-1 leading-relaxed">Staging configurations, secure SSL
+                                setups, and production hosting pushes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="flex-1 w-full md:px-4 group">
+                    <div class="flex items-center gap-4 md:flex-col md:items-start space-y-3">
+                        <div
+                            class="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-white border border-slate-200 flex items-center justify-center font-bold text-slate-800 text-lg font-mono group-hover:border-emerald-600 group-hover:text-emerald-600 transition-all">
+                            06
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-900 font-display">Support</h4>
+                            <p class="text-slate-500 text-sm mt-1 leading-relaxed">Server upkeep checks, performance
+                                tuning adjustments, and future feature upgrades.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: TECHNOLOGY STACK -->
+        <section class="py-24 px-6 max-w-7xl mx-auto reveal" id="stack">
+            <div class="text-center space-y-4 mb-16">
+                <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-slate-900">Technology Stack</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto text-base">
+                    Leveraging trusted frameworks, databases, and deployment platforms to engineer solutions.
+                </p>
+            </div>
+
+            <!-- Filter Controls -->
+            <div class="flex flex-wrap justify-center items-center gap-3 mb-12 max-w-2xl mx-auto font-mono text-xs">
+                <button onclick="filterStack('all')" id="stack-btn-all"
+                    class="stack-filter-btn px-4 py-2 rounded-full border border-brand-blue bg-blue-50 text-brand-blue font-bold transition-all">ALL</button>
+                <button onclick="filterStack('frontend')" id="stack-btn-frontend"
+                    class="stack-filter-btn px-4 py-2 rounded-full border border-slate-200 text-slate-500 hover:text-slate-800 transition-all">FRONTEND</button>
+                <button onclick="filterStack('backend')" id="stack-btn-backend"
+                    class="stack-filter-btn px-4 py-2 rounded-full border border-slate-200 text-slate-500 hover:text-slate-800 transition-all">BACKEND</button>
+                <button onclick="filterStack('database')" id="stack-btn-database"
+                    class="stack-filter-btn px-4 py-2 rounded-full border border-slate-200 text-slate-500 hover:text-slate-800 transition-all">DATABASE</button>
+                <button onclick="filterStack('automation')" id="stack-btn-automation"
+                    class="stack-filter-btn px-4 py-2 rounded-full border border-slate-200 text-slate-500 hover:text-slate-800 transition-all">AUTOMATION</button>
+                <button onclick="filterStack('cloud')" id="stack-btn-cloud"
+                    class="stack-filter-btn px-4 py-2 rounded-full border border-slate-200 text-slate-500 hover:text-slate-800 transition-all">CLOUD
+                    & CD</button>
+            </div>
+
+            <!-- Tech Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4" id="tech-badge-container">
+                <!-- React -->
+                <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100"
+                    data-category="frontend">
+                    <i data-lucide="code" class="w-5 h-5 text-brand-blue"></i>
+                    <span class="font-semibold text-slate-800 text-sm">React</span>
+                </div>
+                <!-- Next.js -->
+                <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100"
+                    data-category="frontend">
+                    <i data-lucide="triangle" class="w-5 h-5 text-slate-800"></i>
+                    <span class="font-semibold text-slate-800 text-sm">Next.js</span>
+                </div>
+                <!-- TypeScript -->
+                <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100"
+                    data-category="frontend">
+                    <i data-lucide="file-code-2" class="w-5 h-5 text-brand-blue"></i>
+                    <span class="font-semibold text-slate-800 text-sm">TypeScript</span>
+                </div>
+                <!-- Angular -->
+                <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100"
+                    data-category="frontend">
+                    <i data-lucide="file-code" class="w-5 h-5 text-red-500"></i>
+                    <span class="font-semibold text-slate-800 text-sm">Angular</span>
+                </div>
+                <!-- Java -->
+                <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100"
+                    data-category="backend">
+                    <i data-lucide="coffee" class="w-5 h-5 text-orange-600"></i>
+                    <span class="font-semibold text-slate-800 text-sm">Java</span>
+                </div>
+                <!-- Spring Boot -->
+                <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100"
+                    data-category="backend">
+                    <i data-lucide="server" class="w-5 h-5 text-emerald-600"></i>
+                    <span class="font-semibold text-slate-800 text-sm">Spring Boot</span>
+                </div>
+                <!-- Node.js -->
+                <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100"
+                    data-category="backend">
+                    <i data-lucide="terminal" class="w-5 h-5 text-green-600"></i>
+                    <span class="font-semibold text-slate-800 text-sm">Node.js</span>
+                </div>
+                <!-- Python -->
+                <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100"
+                    data-category="backend">
+                    <i data-lucide="file-type-2" class="w-5 h-5 text-yellow-600"></i>
+                    <span class="font-semibold text-slate-800 text-sm">Python</span>
+                </div>
+                <!-- PostgreSQL -->
+                <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100"
+                    data-category="database">
+                    <i data-lucide="database" class="w-5 h-5 text-brand-blue"></i>
+                    <span class="font-semibold text-slate-800 text-sm">PostgreSQL</span>
+                </div>
+                <!-- MySQL -->
+                <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100"
+                    data-category="database">
+                    <i data-lucide="database" class="w-5 h-5 text-brand-purple"></i>
+                    <span class="font-semibold text-slate-800 text-sm">MySQL</span>
+                </div>
+                <!-- Supabase -->
+                <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100"
+                    data-category="database">
+                    <i data-lucide="database" class="w-5 h-5 text-emerald-600"></i>
+                    <span class="font-semibold text-slate-800 text-sm">Supabase</span>
+                </div>
+                <!-- Selenium -->
+                <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100"
+                    data-category="automation">
+                    <i data-lucide="shield-check" class="w-5 h-5 text-green-600"></i>
+                    <span class="font-semibold text-slate-800 text-sm">Selenium</span>
+                </div>
+                <!-- Playwright -->
+                <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100"
+                    data-category="automation">
+                    <i data-lucide="test-tube" class="w-5 h-5 text-emerald-600"></i>
+                    <span class="font-semibold text-slate-800 text-sm">Playwright</span>
+                </div>
+                <!-- REST Assured -->
+                <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100"
+                    data-category="automation">
+                    <i data-lucide="refresh-cw" class="w-5 h-5 text-brand-blue"></i>
+                    <span class="font-semibold text-slate-800 text-sm">REST Assured</span>
+                </div>
+                <!-- Cloudflare -->
+                <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100"
+                    data-category="cloud">
+                    <i data-lucide="cloud-lightning" class="w-5 h-5 text-orange-500"></i>
+                    <span class="font-semibold text-slate-800 text-sm">Cloudflare</span>
+                </div>
+                <!-- AWS -->
+                <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100"
+                    data-category="cloud">
+                    <i data-lucide="cloud" class="w-5 h-5 text-yellow-600"></i>
+                    <span class="font-semibold text-slate-800 text-sm">AWS</span>
+                </div>
+                <!-- Docker -->
+                <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100"
+                    data-category="cloud">
+                    <i data-lucide="box" class="w-5 h-5 text-cyan-600"></i>
+                    <span class="font-semibold text-slate-800 text-sm">Docker</span>
+                </div>
+                <!-- GitHub Actions -->
+                <div class="tech-card glass-card p-4 rounded-xl flex items-center gap-3 border-slate-100"
+                    data-category="cloud">
+                    <i data-lucide="git-branch" class="w-5 h-5 text-slate-500"></i>
+                    <span class="font-semibold text-slate-800 text-sm">GitHub</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 7: TESTIMONIAL PLACEHOLDER -->
+        <section class="py-24 px-6 max-w-7xl mx-auto reveal" id="testimonials">
+            <div class="text-center space-y-4 mb-16">
+                <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-slate-900">Client Feedbacks</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto text-base">
+                    What startup founders, engineers, and product owners say about working together.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Testimonial 1 -->
+                <div class="glass-card p-8 rounded-2xl relative border-slate-100 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-yellow-500 gap-1">
+                            <i data-lucide="star" class="w-4.5 h-4.5 fill-current"></i>
+                            <i data-lucide="star" class="w-4.5 h-4.5 fill-current"></i>
+                            <i data-lucide="star" class="w-4.5 h-4.5 fill-current"></i>
+                            <i data-lucide="star" class="w-4.5 h-4.5 fill-current"></i>
+                            <i data-lucide="star" class="w-4.5 h-4.5 fill-current"></i>
+                        </div>
+                        <p class="text-slate-700 italic text-sm leading-relaxed">
+                            "The automation testing framework built for our SaaS dashboard has cut down our QA release
+                            timeline by 70%. Superb documentation and clean TypeScript design patterns."
+                        </p>
+                    </div>
+                    <div class="mt-8 flex items-center gap-3 border-t border-slate-100 pt-4">
+                        <div
+                            class="w-10 h-10 rounded-full bg-gradient-to-tr from-brand-blue to-brand-purple flex items-center justify-center font-bold text-xs text-white">
+                            AM
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-900">Arjun Mehta</h4>
+                            <p class="text-xs text-slate-500">CTO, AlphaTech Solutions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass-card p-8 rounded-2xl relative border-slate-100 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-yellow-500 gap-1">
+                            <i data-lucide="star" class="w-4.5 h-4.5 fill-current"></i>
+                            <i data-lucide="star" class="w-4.5 h-4.5 fill-current"></i>
+                            <i data-lucide="star" class="w-4.5 h-4.5 fill-current"></i>
+                            <i data-lucide="star" class="w-4.5 h-4.5 fill-current"></i>
+                            <i data-lucide="star" class="w-4.5 h-4.5 fill-current"></i>
+                        </div>
+                        <p class="text-slate-700 italic text-sm leading-relaxed">
+                            "Delivered a production-ready NextJS landing page with fully integrated backend API triggers
+                            in less than two weeks. Responsive and very professional. Highly recommended!"
+                        </p>
+                    </div>
+                    <div class="mt-8 flex items-center gap-3 border-t border-slate-100 pt-4">
+                        <div
+                            class="w-10 h-10 rounded-full bg-gradient-to-tr from-brand-purple to-brand-pink flex items-center justify-center font-bold text-xs text-white">
+                            SH
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-900">Sarah Holtz</h4>
+                            <p class="text-xs text-slate-500">Founder, Scale Creative</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 8: CONTACT / LEAD GENERATION -->
+        <section class="py-24 px-6 max-w-7xl mx-auto reveal" id="contact">
+            <div
+                class="glass-panel border-slate-200/80 rounded-3xl p-8 md:p-12 lg:p-16 relative overflow-hidden shadow-xl">
+                <!-- Subtle backdrop background decorations -->
+                <div class="absolute -top-12 -right-12 w-48 h-48 bg-brand-purple/5 rounded-full blur-3xl"></div>
+                <div class="absolute -bottom-12 -left-12 w-48 h-48 bg-brand-blue/5 rounded-full blur-3xl"></div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 relative z-10">
+                    <!-- Info pane -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-slate-900 leading-tight">
+                            Have an Idea? <br>Let's Build It.
+                        </h2>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Whether you need a specialized automation suite, a high-converting web presence, or advice
+                            on API scaling, we are ready to turn your product vision into code.
+                        </p>
+
+                        <!-- Trust factors -->
+                        <div class="space-y-3 pt-4 border-t border-slate-100 text-xs text-slate-500 font-mono">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="shield-check" class="w-4 h-4 text-emerald-600"></i>
+                                <span>NDAs supported before sharing ideas.</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="clock" class="w-4 h-4 text-brand-blue"></i>
+                                <span>Replies expected within 24 business hours.</span>
+                            </div>
+                        </div>
+
+                        <!-- Channels -->
+                        <div class="space-y-4 pt-4">
+                            <span class="text-[10px] font-mono text-slate-400 uppercase tracking-widest block">Direct
+                                Channels</span>
+
+                            <div class="flex flex-col gap-3 font-medium text-sm text-slate-600">
+                                <!-- Email -->
+                                <a href="mailto:hello@futurelab.co.in"
+                                    class="flex items-center gap-3 hover:text-slate-900 transition-colors">
+                                    <div
+                                        class="w-8 h-8 rounded-lg bg-slate-100 flex items-center justify-center text-slate-500">
+                                        <i data-lucide="mail" class="w-4 h-4"></i>
+                                    </div>
+                                    <span>hello@futurelab.co.in</span>
+                                </a>
+                                <!-- WhatsApp -->
+                                <a href="https://wa.me/919718214423" target="_blank"
+                                    class="flex items-center gap-3 hover:text-slate-900 transition-colors">
+                                    <div
+                                        class="w-8 h-8 rounded-lg bg-slate-100 flex items-center justify-center text-slate-500">
+                                        <i data-lucide="message-square" class="w-4 h-4"></i>
+                                    </div>
+                                    <span>WhatsApp: Chat instantly</span>
+                                </a>
+                                <!-- LinkedIn -->
+                                <a href="https://linkedin.com/company/futurelab" target="_blank"
+                                    class="flex items-center gap-3 hover:text-slate-900 transition-colors">
+                                    <div
+                                        class="w-8 h-8 rounded-lg bg-slate-100 flex items-center justify-center text-slate-500">
+                                        <i data-lucide="linkedin" class="w-4 h-4"></i>
+                                    </div>
+                                    <span>LinkedIn Company Page</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form pane -->
+                    <div class="lg:col-span-7 bg-white/50 border border-slate-200/80 rounded-2xl p-6 md:p-8"
+                        id="contact-form-container">
+                        <form id="lead-form" onsubmit="handleFormSubmit(event)" class="space-y-5">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div class="space-y-2">
+                                    <label for="form-name" class="text-xs font-semibold text-slate-500">Your Name
+                                        *</label>
+                                    <input type="text" id="form-name" required
+                                        class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-brand-blue transition-colors"
+                                        placeholder="e.g. John Doe">
+                                </div>
+                                <div class="space-y-2">
+                                    <label for="form-email" class="text-xs font-semibold text-slate-500">Email Address
+                                        *</label>
+                                    <input type="email" id="form-email" required
+                                        class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-brand-blue transition-colors"
+                                        placeholder="e.g. john@company.com">
+                                </div>
+                            </div>
+
+                            <div class="space-y-2">
+                                <label for="form-project" class="text-xs font-semibold text-slate-500">Required Service
+                                    *</label>
+                                <select id="form-project" required
+                                    class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-700 focus:outline-none focus:border-brand-blue transition-colors">
+                                    <option value="" disabled selected>Select service need...</option>
+                                    <option value="Web App">Web Application Development</option>
+                                    <option value="Mobile App">Android App Development</option>
+                                    <option value="Automation">Business Workflow Automation</option>
+                                    <option value="Test Framework">QA/Test Automation Suite</option>
+                                    <option value="AI Integration">Custom AI/LLM Integration</option>
+                                    <option value="Other">Other Software Consultations</option>
+                                </select>
+                            </div>
+
+                            <div class="space-y-2">
+                                <label for="form-message" class="text-xs font-semibold text-slate-500">Project Goal /
+                                    Details *</label>
+                                <textarea id="form-message" required rows="4"
+                                    class="w-full bg-white border border-slate-200 rounded-xl p-4 text-sm text-slate-900 focus:outline-none focus:border-brand-blue transition-colors resize-none"
+                                    placeholder="Provide a brief summary of the platform goals, stack needs, and deadlines..."></textarea>
+                            </div>
+
+                            <button type="submit"
+                                class="w-full py-4 bg-gradient-to-r from-brand-blue to-brand-purple rounded-xl font-bold text-white shadow-lg shadow-brand-blue/20 hover:shadow-brand-blue/35 hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-2">
+                                Send Proposal Message <i data-lucide="send" class="w-4 h-4"></i>
+                            </button>
+                        </form>
+
+                        <!-- Success State Screen (Hidden initially) -->
+                        <div id="form-success"
+                            class="hidden h-full flex flex-col justify-center items-center text-center py-10 space-y-6">
+                            <div
+                                class="w-16 h-16 rounded-full bg-emerald-500/10 border border-emerald-500/25 flex items-center justify-center text-emerald-600 shadow-lg shadow-emerald-500/5">
+                                <i data-lucide="check" class="w-8 h-8"></i>
+                            </div>
+                            <div class="space-y-2">
+                                <h4 class="text-xl font-bold font-display text-slate-900">Proposal Submitted
+                                    Successfully</h4>
+                                <p class="text-slate-600 text-sm max-w-sm">
+                                    Thank you for reaching out. We'll analyze your requirements and follow up via email
+                                    within 24 hours.
+                                </p>
+                            </div>
+                            <button onclick="resetLeadForm()"
+                                class="px-6 py-2.5 bg-slate-100 border border-slate-200 hover:bg-slate-200 rounded-xl text-xs font-bold transition-all text-slate-700">
+                                Send Another Message
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- SECTION 9: FOOTER -->
@@ -910,13 +1061,15 @@
             <!-- Brand Column -->
             <div class="space-y-4">
                 <div class="flex items-center gap-2">
-                    <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-brand-blue to-brand-purple flex items-center justify-center">
+                    <div
+                        class="w-8 h-8 rounded-lg bg-gradient-to-tr from-brand-blue to-brand-purple flex items-center justify-center">
                         <i data-lucide="terminal" class="w-4 h-4 text-white"></i>
                     </div>
                     <span class="font-display font-bold text-lg text-slate-900">Future Lab</span>
                 </div>
                 <p class="text-slate-600 text-xs leading-relaxed">
-                    Custom software engineering, automation testing tools, and scalable web structures designed to solve real business challenges.
+                    Custom software engineering, automation testing tools, and scalable web structures designed to solve
+                    real business challenges.
                 </p>
                 <span class="text-[10px] text-slate-400 block font-mono">domain: futurelab.co.in</span>
             </div>
@@ -937,11 +1090,13 @@
             <div>
                 <h4 class="font-bold text-sm text-slate-900 mb-4 uppercase tracking-wider font-mono">Core Solutions</h4>
                 <ul class="space-y-2 text-xs text-slate-500 font-semibold">
-                    <li><a href="#services" class="hover:text-slate-950 transition-colors">Web App Architectures</a></li>
+                    <li><a href="#services" class="hover:text-slate-950 transition-colors">Web App Architectures</a>
+                    </li>
                     <li><a href="#services" class="hover:text-slate-950 transition-colors">Android Mobile Apps</a></li>
                     <li><a href="#services" class="hover:text-slate-950 transition-colors">Business Pipelines</a></li>
                     <li><a href="#services" class="hover:text-slate-950 transition-colors">Test Automation Labs</a></li>
-                    <li><a href="#services" class="hover:text-slate-950 transition-colors">Custom AI Integration</a></li>
+                    <li><a href="#services" class="hover:text-slate-950 transition-colors">Custom AI Integration</a>
+                    </li>
                 </ul>
             </div>
 
@@ -949,15 +1104,19 @@
             <div>
                 <h4 class="font-bold text-sm text-slate-900 mb-4 uppercase tracking-wider font-mono">Connect</h4>
                 <ul class="space-y-2 text-xs text-slate-500 font-semibold">
-                    <li><a href="mailto:hello@futurelab.co.in" class="hover:text-slate-950 transition-colors">hello@futurelab.co.in</a></li>
-                    <li><a href="https://wa.me/919718214423" class="hover:text-slate-950 transition-colors">WhatsApp Direct</a></li>
-                    <li><a href="https://linkedin.com/company/futurelab" class="hover:text-slate-950 transition-colors">LinkedIn Profile</a></li>
+                    <li><a href="mailto:hello@futurelab.co.in"
+                            class="hover:text-slate-950 transition-colors">hello@futurelab.co.in</a></li>
+                    <li><a href="https://wa.me/919718214423" class="hover:text-slate-950 transition-colors">WhatsApp
+                            Direct</a></li>
+                    <li><a href="https://linkedin.com/company/futurelab"
+                            class="hover:text-slate-950 transition-colors">LinkedIn Profile</a></li>
                     <li><span class="text-slate-500 block mt-2 font-mono">Loc: Bangalore, India</span></li>
                 </ul>
             </div>
         </div>
 
-        <div class="max-w-7xl mx-auto border-t border-slate-200 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400 font-mono">
+        <div
+            class="max-w-7xl mx-auto border-t border-slate-200 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400 font-mono">
             <span>&copy; 2026 Future Lab. All Rights Reserved.</span>
             <div class="flex items-center gap-6">
                 <span>Designed with Precision</span>
@@ -1015,7 +1174,7 @@
                 }
             });
         }, { threshold: 0.1 });
-        
+
         reveals.forEach(reveal => observer.observe(reveal));
 
 
@@ -1023,7 +1182,7 @@
         let currentHeroTab = 'api';
         function switchHeroTab(tabName) {
             currentHeroTab = tabName;
-            
+
             // Toggle active tabs selector styles
             const tabButtons = {
                 api: document.getElementById('tab-btn-api'),
@@ -1156,7 +1315,7 @@
 
             consoleOutput.textContent = "";
             let index = 0;
-            
+
             function typeCharacter() {
                 if (index < snippet.length) {
                     consoleOutput.textContent += snippet.charAt(index);
@@ -1217,7 +1376,7 @@
             // Submit form fields using FormSubmit AJAX API
             fetch("https://formsubmit.co/ajax/hello@futurelab.co.in", {
                 method: "POST",
-                headers: { 
+                headers: {
                     "Content-Type": "application/json",
                     "Accept": "application/json"
                 },
@@ -1228,33 +1387,33 @@
                     Message: msgInput.value
                 })
             })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error("API call failed");
-                }
-                return response.json();
-            })
-            .then(data => {
-                formNode.classList.add('hidden');
-                successNode.classList.remove('hidden');
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error("API call failed");
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    formNode.classList.add('hidden');
+                    successNode.classList.remove('hidden');
 
-                // Clear fields
-                nameInput.value = "";
-                emailInput.value = "";
-                serviceInput.value = "";
-                msgInput.value = "";
+                    // Clear fields
+                    nameInput.value = "";
+                    emailInput.value = "";
+                    serviceInput.value = "";
+                    msgInput.value = "";
 
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = 'Send Proposal Message <i data-lucide="send" class="w-4 h-4"></i>';
-                lucide.createIcons();
-            })
-            .catch(error => {
-                console.error('Error submitting form:', error);
-                alert('There was a problem sending your message. Please email hello@futurelab.co.in directly or try again.');
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = 'Send Proposal Message <i data-lucide="send" class="w-4 h-4"></i>';
-                lucide.createIcons();
-            });
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = 'Send Proposal Message <i data-lucide="send" class="w-4 h-4"></i>';
+                    lucide.createIcons();
+                })
+                .catch(error => {
+                    console.error('Error submitting form:', error);
+                    alert('There was a problem sending your message. Please email hello@futurelab.co.in directly or try again.');
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = 'Send Proposal Message <i data-lucide="send" class="w-4 h-4"></i>';
+                    lucide.createIcons();
+                });
         }
 
         // Reset
@@ -1268,7 +1427,6 @@
             {
                 title: "Automation Lab",
                 description: "Interactive sandbox environment designed to practice modern web automation. Includes complex tables, dynamic drop downs, and custom frames for testing.",
-                domain: "automation.futurelab.co.in",
                 url: "https://automation.futurelab.co.in",
                 urlText: "Visit Platform",
                 tagText: "LIVE",
@@ -1279,7 +1437,6 @@
             {
                 title: "MF Tracker",
                 description: "Personal mutual fund tracking and analytics platform. Import portfolio data, analyze asset allocation, monitor returns, and benchmark performance metrics.",
-                domain: "mftracker.futurelab.co.in",
                 url: "https://mftracker.futurelab.co.in",
                 urlText: "Visit Platform",
                 tagText: "LIVE",
@@ -1290,7 +1447,6 @@
             {
                 title: "Party Games",
                 description: "Multiplayer web games optimized for mobile screens. Instant lobbies, real-time board updates, prompt battles, and trivia boards to spice up social events.",
-                domain: "partyfun.futurelab.co.in",
                 url: "https://partyfun.futurelab.co.in",
                 urlText: "Visit Platform",
                 tagText: "LIVE",
@@ -1301,7 +1457,6 @@
             {
                 title: "SQL Playground",
                 description: "Learn and test SQL queries in real time. A browser-driven relational mock database with preloaded mock structures, interactive schemas, and quick tests.",
-                domain: "sql.futurelab.co.in",
                 url: "https://sql.futurelab.co.in",
                 urlText: "Visit Platform",
                 tagText: "LIVE",
@@ -1312,7 +1467,6 @@
             {
                 title: "Library API Sandbox",
                 description: "Interactive REST API playground for practicing API integration. Perform GET, POST, PUT, and DELETE queries on a mock database with simulated authentication.",
-                domain: "api.futurelab.co.in",
                 url: "https://api.futurelab.co.in",
                 urlText: "Visit Platform",
                 tagText: "LIVE",
@@ -1323,7 +1477,6 @@
             {
                 title: "Tech Quiz",
                 description: "Interactive software testing quiz platform covering 20+ topics including Selenium, API testing, load testing, and Java. Features progress metrics and detailed performance charts.",
-                domain: "techquiz.futurelab.co.in",
                 url: "https://techquiz.futurelab.co.in",
                 urlText: "Visit Platform",
                 tagText: "LIVE",
@@ -1334,7 +1487,6 @@
             {
                 title: "Community App",
                 description: "Interactive engagement platform for community group. Set up discussion threads, events, user directory boards, reputation systems, and notification pipes.",
-                domain: "abkm.futurelab.co.in",
                 url: null,
                 urlText: "Under Development",
                 tagText: "DEVELOPMENT",
@@ -1345,7 +1497,6 @@
             {
                 title: "Barati",
                 description: "A multi-platform community app for wedding celebrations. Find friends and helpers to perform traditional rituals, coordinate events, and manage guest support.",
-                domain: "barati.futurelab.co.in",
                 url: null,
                 urlText: "Under Development",
                 tagText: "DEVELOPMENT",
@@ -1356,7 +1507,6 @@
             {
                 title: "AI Integration Kit",
                 description: "A plug-and-play SDK to connect LLM orchestration pipelines with databases, tool-use systems, and local memory vaults.",
-                domain: "ai-kit.futurelab.co.in",
                 url: null,
                 urlText: "Pipeline stage",
                 tagText: "PIPELINE",
@@ -1367,7 +1517,6 @@
             {
                 title: "Future SaaS Projects",
                 description: "Currently engineering new productivity SaaS extensions, automated integrations, and custom prompt workflows. Follow along for updates.",
-                domain: "tbd.futurelab.co.in",
                 url: null,
                 urlText: "Development in progress",
                 tagText: "PIPELINE",
@@ -1485,4 +1634,5 @@
         }
     </script>
 </body>
+
 </html>
