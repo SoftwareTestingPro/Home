@@ -1431,6 +1431,7 @@
             {
                 title: "Automation Lab",
                 description: "Interactive sandbox environment designed to practice modern web automation. Includes complex tables, dynamic drop downs, and custom frames for testing.",
+                domain: "automation.futurelab.co.in",
                 url: "https://automation.futurelab.co.in",
                 urlText: "Visit Platform",
                 tagText: "LIVE",
@@ -1441,6 +1442,7 @@
             {
                 title: "MF Tracker",
                 description: "Personal mutual fund tracking and analytics platform. Import portfolio data, analyze asset allocation, monitor returns, and benchmark performance metrics.",
+                domain: "mftracker.futurelab.co.in",
                 url: "https://mftracker.futurelab.co.in",
                 urlText: "Visit Platform",
                 tagText: "LIVE",
@@ -1451,6 +1453,7 @@
             {
                 title: "Party Games",
                 description: "Multiplayer web games optimized for mobile screens. Instant lobbies, real-time board updates, prompt battles, and trivia boards to spice up social events.",
+                domain: "partyfun.futurelab.co.in",
                 url: "https://partyfun.futurelab.co.in",
                 urlText: "Visit Platform",
                 tagText: "LIVE",
@@ -1461,6 +1464,7 @@
             {
                 title: "SQL Playground",
                 description: "Learn and test SQL queries in real time. A browser-driven relational mock database with preloaded mock structures, interactive schemas, and quick tests.",
+                domain: "sql.futurelab.co.in",
                 url: "https://sql.futurelab.co.in",
                 urlText: "Visit Platform",
                 tagText: "LIVE",
@@ -1471,6 +1475,7 @@
             {
                 title: "Library API Sandbox",
                 description: "Interactive REST API playground for practicing API integration. Perform GET, POST, PUT, and DELETE queries on a mock database with simulated authentication.",
+                domain: "api.futurelab.co.in",
                 url: "https://api.futurelab.co.in",
                 urlText: "Visit Platform",
                 tagText: "LIVE",
@@ -1481,6 +1486,7 @@
             {
                 title: "Tech Quiz",
                 description: "Interactive software testing quiz platform covering 20+ topics including Selenium, API testing, load testing, and Java. Features progress metrics and detailed performance charts.",
+                domain: "techquiz.futurelab.co.in",
                 url: "https://techquiz.futurelab.co.in",
                 urlText: "Visit Platform",
                 tagText: "LIVE",
@@ -1489,8 +1495,20 @@
                 iconColor: "brand-pink"
             },
             {
+                title: "Quick Note",
+                description: "Fast, lightweight note-taking web app. Capture thoughts instantly with clean markdown formatting, local autosave, and seamless productivity shortcuts.",
+                domain: "quicknote.futurelab.co.in",
+                url: "https://quicknote.futurelab.co.in",
+                urlText: "Visit Platform",
+                tagText: "LIVE",
+                tagType: "emerald",
+                icon: "file-text",
+                iconColor: "brand-blue"
+            },
+            {
                 title: "Community App",
                 description: "Interactive engagement platform for community group. Set up discussion threads, events, user directory boards, reputation systems, and notification pipes.",
+                domain: "abkm.futurelab.co.in",
                 url: null,
                 urlText: "Under Development",
                 tagText: "DEVELOPMENT",
@@ -1501,6 +1519,7 @@
             {
                 title: "Barati",
                 description: "A multi-platform community app for wedding celebrations. Find friends and helpers to perform traditional rituals, coordinate events, and manage guest support.",
+                domain: "barati.futurelab.co.in",
                 url: null,
                 urlText: "Under Development",
                 tagText: "DEVELOPMENT",
@@ -1511,6 +1530,7 @@
             {
                 title: "AI Integration Kit",
                 description: "A plug-and-play SDK to connect LLM orchestration pipelines with databases, tool-use systems, and local memory vaults.",
+                domain: "ai-kit.futurelab.co.in",
                 url: null,
                 urlText: "Pipeline stage",
                 tagText: "PIPELINE",
@@ -1521,6 +1541,7 @@
             {
                 title: "Future SaaS Projects",
                 description: "Currently engineering new productivity SaaS extensions, automated integrations, and custom prompt workflows. Follow along for updates.",
+                domain: "tbd.futurelab.co.in",
                 url: null,
                 urlText: "Development in progress",
                 tagText: "PIPELINE",
@@ -1553,6 +1574,7 @@
                     tagClass = "bg-purple-500/10 text-purple-700 border-purple-500/25";
                 }
 
+                const domainDisplay = product.domain ? `<span class="text-xs font-mono text-slate-400">${product.domain}</span>` : '';
                 const isClickable = product.tagText === 'LIVE' || product.tagText === 'BETA';
 
                 if (!isClickable) {
@@ -1564,7 +1586,7 @@
                                 <span class="px-2.5 py-1 text-[10px] font-bold rounded ${tagClass}">
                                     ${product.tagText}
                                 </span>
-                                <span class="text-xs font-mono text-slate-400">${product.domain}</span>
+                                ${domainDisplay}
                             </div>
                             <h3 class="text-xl font-bold font-display text-slate-900 flex items-center gap-2">
                                 ${product.title} <i data-lucide="${product.icon}" class="w-4 h-4 ${pulseIconColor} animate-pulse"></i>
@@ -1587,7 +1609,7 @@
                                 <span class="px-2.5 py-1 text-[10px] font-bold rounded ${tagClass} flex items-center gap-1">
                                     ${dotHtml}${product.tagText}
                                 </span>
-                                <span class="text-xs font-mono text-slate-400">${product.domain}</span>
+                                ${domainDisplay}
                             </div>
                             <h3 class="text-xl font-bold font-display text-slate-900">${product.title}</h3>
                             <p class="text-slate-600 text-sm leading-relaxed">
